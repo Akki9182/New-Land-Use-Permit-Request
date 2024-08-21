@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Technical Information and Presentation" section_id="ba96fb72c30c161061f2b92ed4013148" sys_domain="global" table="x_1329978_new_la_0_lup_task_table" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>technical_information_and_presentation_content</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>11f5e007c300561061f2b92ed4013178</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>regional_planning_review_is_completed_select_no_if_rp_review_is_overdue</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>1df5e007c300561061f2b92ed4013178</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>outcome_of_rp_review_select_not_applicable_if_rp_review_is_overdue</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>15f5e007c300561061f2b92ed4013179</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tanmiah_analysis_report</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>1df5e007c300561061f2b92ed4013179</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tanmiah_analysis_report_comments</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>15f5e007c300561061f2b92ed401317a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>this_request_is_part_of_an_approved_sector_lup_master_plan</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>1df5e007c300561061f2b92ed401317a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>approved_sector_lup_master_comments</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>15f5e007c300561061f2b92ed401317b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>planned_sector_lup_master_plan</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>1df5e007c300561061f2b92ed401317b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>neom_master_plans</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>15f5e007c300561061f2b92ed401317c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>neom_maser_plan_comments</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>1df5e007c300561061f2b92ed401317c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>applicant_provided_evidence</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>15f5e007c300561061f2b92ed401317d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>applicantprovidedevidencecomments</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>1df5e007c300561061f2b92ed401317d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>thevisualimpactisconsidered</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>15f5e007c300561061f2b92ed401317e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>the_visual_impactis_considered_comments</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>1df5e007c300561061f2b92ed401317e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>luprequestiswithinnaturereservemasterplan</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>15f5e007c300561061f2b92ed401317f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cmp_comments</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>1df5e007c300561061f2b92ed401317f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>arearequestedisoptimized</element>
+            <position>16</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>15f5e007c300561061f2b92ed4013180</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>arearequestedisoptimizedcomments</element>
+            <position>17</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>1df5e007c300561061f2b92ed4013180</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>masterplanandlupoverlapanalysis</element>
+            <position>18</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>15f5e007c300561061f2b92ed4013181</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>masterplanandlupoverlapanalysis_comments</element>
+            <position>19</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>1df5e007c300561061f2b92ed4013181</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>technicalinformationandpresentationcontentcompleted</element>
+            <position>20</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>15f5e007c300561061f2b92ed4013182</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>additional_reviewers_required</element>
+            <position>21</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>1df5e007c300561061f2b92ed4013182</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>additional_reviewers</element>
+            <position>22</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>15f5e007c300561061f2b92ed4013183</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>23</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>1df5e007c300561061f2b92ed4013183</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>nameofreviewer</element>
+            <position>24</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>15f5e007c300561061f2b92ed4013184</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_file_attachment_1</element>
+            <position>25</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 11:06:26</sys_created_on>
+            <sys_id>1df5e007c300561061f2b92ed4013184</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Technical Information and Presentation" display_value="Technical Information and Presentation" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">ba96fb72c30c161061f2b92ed4013148</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 11:06:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Technical Information and Presentation</caption>
+            <header>false</header>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 07:39:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ba96fb72c30c161061f2b92ed4013148</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>x_1329978_new_la_0_lup_task_table</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+            <sys_update_name>sys_ui_section_ba96fb72c30c161061f2b92ed4013148</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 10:40:23</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

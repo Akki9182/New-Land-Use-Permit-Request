@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="request_for_luc_meeting" label="Request for LUC meeting to CEO Office sent" language="en" table="x_1329978_new_la_0_lup_task_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>request_for_luc_meeting</element>
+            <help/>
+            <hint/>
+            <label>Request for LUC meeting to CEO Office sent</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 10:32:37</sys_created_on>
+            <sys_id>f53edc0bc3cc161061f2b92ed401312a</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Request for LUC meeting to CEO Office sent</sys_name>
+            <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+            <sys_update_name>sys_documentation_x_1329978_new_la_0_lup_task_table_request_for_luc_meeting_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 10:32:40</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

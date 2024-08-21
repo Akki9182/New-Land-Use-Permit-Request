@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="final_decision_outcome" table="x_1329978_new_la_0_lup_task_table" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>final_decision_outcome</element>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 10:49:24</sys_created_on>
+            <sys_id>b702ac8fc3cc161061f2b92ed4013123</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>final_decision_outcome</sys_name>
+            <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+            <sys_update_name>sys_choice_x_1329978_new_la_0_lup_task_table_final_decision_outcome</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 10:49:24</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>final_decision_outcome</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Approval</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 10:49:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7302ac8fc3cc161061f2b92ed4013123</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 10:49:24</sys_updated_on>
+            <value>Approval</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>final_decision_outcome</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rejection</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 10:49:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7702ac8fc3cc161061f2b92ed4013129</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 10:49:24</sys_updated_on>
+            <value>Rejection</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>final_decision_outcome</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Request to be Represented</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 10:49:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f02ac8fc3cc161061f2b92ed401312e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 10:49:24</sys_updated_on>
+            <value>Request to be Represented</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

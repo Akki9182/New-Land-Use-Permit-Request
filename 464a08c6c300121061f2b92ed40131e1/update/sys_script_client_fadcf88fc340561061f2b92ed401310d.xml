@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>task_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>to visible pre submission section</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    // The value of the "Stage" field
+    var stageValue = g_form.getValue('task_type'); // Replace 'stage' with the correct field name for the stage
+
+    // Define the section name to hide
+    var sectionName = 'presubmission'; // Replace with the actual backend name if different
+
+    // Check the stage value and hide the section accordingly
+    if (stageValue === 'pre-submission') { // Replace 'pre-submission' with the actual value that triggers the hide
+        g_form.setSectionDisplay(sectionName, true);
+    } else {
+        g_form.setSectionDisplay(sectionName, false);
+    }
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-20 12:51:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fadcf88fc340561061f2b92ed401310d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>to visible pre submission section</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name>sys_script_client_fadcf88fc340561061f2b92ed401310d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-21 06:32:41</sys_updated_on>
+        <table>x_1329978_new_la_0_lup_task_table</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

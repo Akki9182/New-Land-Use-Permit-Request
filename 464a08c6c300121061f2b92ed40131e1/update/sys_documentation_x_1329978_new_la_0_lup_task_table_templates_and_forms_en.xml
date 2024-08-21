@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="templates_and_forms" label="Templates and forms are filled out correctly" language="en" table="x_1329978_new_la_0_lup_task_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>templates_and_forms</element>
+            <help/>
+            <hint/>
+            <label>Templates and forms are filled out correctly</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 07:26:52</sys_created_on>
+            <sys_id>4db3fb7ec3c8161061f2b92ed4013184</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Templates and forms are filled out correctly</sys_name>
+            <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+            <sys_update_name>sys_documentation_x_1329978_new_la_0_lup_task_table_templates_and_forms_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 07:26:54</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
