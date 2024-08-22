@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1329978_new_la_0.FieldManagerForSection</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>FieldManagerForSection</name>
+        <script><![CDATA[var FieldManagerForSection = Class.create();
+FieldManagerForSection.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getFields: function() {
+        var tableName = this.getParameter('sysparm_tableName');
+        var sectionLabel = this.getParameter('sysparm_sectionLabel');
+
+        // Ensure the query parameters are being logged for debugging
+        gs.info('Table: ' + tableName + ', Section Label: ' + sectionLabel);
+
+        var sectionGr = new GlideRecord('sys_ui_section');
+        sectionGr.addQuery('caption', sectionLabel);
+        sectionGr.addQuery('view', 'Default view'); // Adjust as needed
+        sectionGr.addQuery('table', tableName);
+        sectionGr.query();
+
+        if (sectionGr.next()) {
+            gs.info('Section found: ' + sectionGr.name);
+            var fields = [];
+            var elementGr = new GlideRecord('sys_ui_element');
+            elementGr.addQuery('sys_ui_section', sectionGr.sys_id);
+            elementGr.orderBy('position');
+            elementGr.query();
+            
+            while (elementGr.next()) {
+                fields.push(elementGr.element.toString());
+            }
+            return JSON.stringify(fields);
+        } else {
+            gs.info('No section found for label: ' + sectionLabel);
+            return JSON.stringify([]);
+        }
+    },
+
+    type: 'FieldManagerForSection'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-22 16:26:40</sys_created_on>
+        <sys_id>13e140b7c384921061f2b92ed4013170</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>FieldManagerForSection</sys_name>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name>sys_script_include_13e140b7c384921061f2b92ed4013170</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-22 16:50:37</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>13e140b7c384921061f2b92ed4013170</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-22 16:26:40</sys_created_on>
+        <sys_id>2f6284b3c384921061f2b92ed4013159</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-22 16:26:40</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

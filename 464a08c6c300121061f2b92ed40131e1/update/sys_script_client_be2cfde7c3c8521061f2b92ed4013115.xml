@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>to get section fields</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    // Define the section name (replace with the actual section backend name)
+    var sectionName = 'document_controlqualitycheck'; 
+
+    // Retrieve the fields of the specified section
+    var sectionFields = getSectionFields(sectionName);
+
+    // Show the fields in the section as an informational message
+    g_form.addInfoMessage('Fields in section "' + sectionName + '": ' + sectionFields.join(', '));
+alert('Fields in section "' + sectionName + '": ' + sectionFields.join(', '));
+
+}
+
+// Helper function to get all fields in a section
+function getSectionFields(sectionName) {
+    var sectionFields = [];
+    var allFields = g_form.getFormElements(); // Get all form elements
+
+    for (var i = 0; i < allFields.length; i++) {
+        var fieldName = allFields[i].name; // Field name
+        var fieldElement = g_form.getControl(fieldName);
+        
+        if (fieldElement) {
+            // Check if the field belongs to the given section
+            if (isFieldInSection(fieldElement, sectionName)) {
+                sectionFields.push(fieldName);
+            }
+        }
+    }
+    
+    return sectionFields;
+}
+
+// Helper function to determine if a field is in a specific section
+function isFieldInSection(fieldElement, sectionName) {
+    // Example logic to determine if the field belongs to the section
+    var parentSection = fieldElement.closest('.section'); // Adjust this based on your HTML structure
+
+    // Check if the parent section has a data attribute or class for identification
+    if (parentSection && parentSection.getAttribute('data-section') === sectionName) {
+        return true;
+    }
+
+    return false;
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-22 06:46:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>be2cfde7c3c8521061f2b92ed4013115</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>to get section fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name>sys_script_client_be2cfde7c3c8521061f2b92ed4013115</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-22 06:58:50</sys_updated_on>
+        <table>x_1329978_new_la_0_lup_task_table</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

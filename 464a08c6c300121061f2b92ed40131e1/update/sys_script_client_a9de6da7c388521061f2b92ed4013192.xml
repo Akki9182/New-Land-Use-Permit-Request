@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>doc control section validation test</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    // Get the current values of the state and task_type fields
+    var state = g_form.getValue('state'); // Replace with the actual state field name if different
+    var taskType = g_form.getValue('task_type'); // Replace with the actual task type field name if different
+
+    // Variable to track if any mandatory field is invalid
+    var isFormValid = true;
+
+    // Proceed only if state is '3' (Close Complete)
+    if (state === '3') { // Replace '3' with the actual value representing 'Close Complete' if different
+
+        // Define mandatory fields for each task type along with their data types
+        var taskTypeFields = {
+            'pre-submission': [
+                { name: 'u_1_gis_validation', type: 'choice' },
+                { name: 'gis_file_formats', type: 'choice' },
+                { name: 'gis_files', type: 'choice' },
+                { name: 'coordinate_system', type: 'choice' },
+                { name: 'vertical_datum_is_to_egm2008', type: 'choice' },
+                { name: 'total_requested_lup_area', type: 'choice' },
+                { name: 'gis_validation_completed', type: 'boolean' },
+                { name: 'name_of_reviewer', type: 'choice' }
+            ],
+            'document control quality check': [
+                { name: 'document_control_quality_check', type: 'choice' },
+                { name: 'used_templates_and_forms_are_up_to_date', type: 'choice' },
+                { name: 'submitted_documentation_is_complete', type: 'choice' },
+                { name: 'templates_and_forms', type: 'choice' },
+                { name: 'document_control_quality_check_completed', type: 'boolean' },
+                { name: 'nameofreviewer', type: 'choice' }
+            ],
+            'technical information and presentation content': [
+                { name: 'technical_information_and_presentation_content', type: 'choice' },
+                { name: 'regional_planning_review_is_completed_select_no_if_rp_review_is_overdue', type: 'choice' },
+                { name: 'outcome_of_rp_review_select_not_applicable_if_rp_review_is_overdue', type: 'choice' },
+                { name: 'tanmiah_analysis_report', type: 'choice' },
+                { name: 'this_request_is_part_of_an_approved_sector_lup_master_plan', type: 'choice' },
+                { name: 'planned_sector_lup_master_plan', type: 'choice' },
+                { name: 'neom_master_plans', type: 'choice' },
+                { name: 'applicant_provided_evidence', type: 'choice' },
+                { name: 'luprequestiswithinnaturereservemasterplan', type: 'choice' },
+                { name: 'arearequestedisoptimized', type: 'choice' },
+                { name: 'masterplanandlupoverlapanalysis', type: 'choice' },
+                { name: 'additional_reviewers_required', type: 'choice' },
+                { name: 'thevisualimpactisconsidered', type: 'choice' },
+                { name: 'technicalinformationandpresentationcontentcompleted', type: 'boolean' },
+                { name: 'nameofreviewer', type: 'choice' }
+            ],
+            'submission & review': [
+                { name: 'prescreening_and_review_completed_by', type: 'choice' },
+                { name: 'outcome_of_review', type: 'choice' },
+                { name: 'generate_lup_number', type: 'boolean' },
+                { name: 'upload_to_geoexplore0', type: 'boolean' },
+                { name: 'upload_signed_lucs_review_form', type: 'boolean' },
+                { name: 'sector_review_version_of_submission_received', type: 'choice' }
+            ],
+            'luc consideration': [
+                { name: 'subsequent_sector_review_required', type: 'choice' },
+                { name: 'conditions_report_submitted', type: 'boolean' },
+                { name: 'latest_area_requirements_incorporated_into_gis_system', type: 'boolean' },
+                { name: 'request_for_luc_meeting', type: 'boolean' },
+                { name: 'luc_meeting_number', type: 'string' },
+                { name: 'presented_at_luc_meeting', type: 'boolean' },
+                { name: 'sent_minutes_of_meeting_to_applicant', type: 'boolean' },
+                { name: 'conditions_fulfilled', type: 'boolean' },
+                { name: 'luc_meeting_documentation_and_presentation_ready', type: 'boolean' },
+                { name: 'include_in_agenda_for_luc_meeting', type: 'boolean' },
+                { name: 'luc_consideration_outcome', type: 'choice' }
+            ],
+            'final decision': [
+                { name: 'board_presentation_prepared', type: 'boolean' },
+                { name: 'presented_to_bod', type: 'boolean' },
+                { name: 'bod_meeting_number', type: 'choice' },
+                { name: 'upload_proof_of_outcome_email', type: 'boolean' },
+                { name: 'upload_to_gis', type: 'boolean' },
+                { name: 'bod_resolution_number', type: 'choice' },
+                { name: 'generate_certificate', type: 'boolean' },
+                { name: 'presentation_sent_to_ceo_office', type: 'boolean' },
+                { name: 'date_of_bod_meeting', type: 'date' },
+                { name: 'final_decision_outcome', type: 'choice' },
+                { name: 'extract_of_minutes_uploaded', type: 'boolean' }
+            ]
+        };
+
+        // Get the fields for the current task type
+        var fieldsToValidate = taskTypeFields[taskType];
+
+        if (fieldsToValidate && fieldsToValidate.length > 0) {
+            // Clear any previous error messages
+            fieldsToValidate.forEach(function(field) {
+                g_form.hideFieldMsg(field.name);
+            });
+
+            // Validate each field
+            fieldsToValidate.forEach(function(field) {
+                var fieldValue = g_form.getValue(field.name);
+                var isFieldValid = false;
+
+                switch (field.type) {
+                    case 'boolean':
+                        isFieldValid = fieldValue === 'true' || fieldValue === '1';
+                        break;
+                    case 'choice':
+                        isFieldValid = fieldValue !== '' && fieldValue !== 'undefined';
+                        break;
+                    default:
+                        isFieldValid = fieldValue && fieldValue.trim() !== '';
+                        break;
+                }
+
+                if (!isFieldValid) {
+                    g_form.showFieldMsg(field.name, 'This field is mandatory and cannot be left empty.', 'error');
+                    isFormValid = false;
+                }
+            });
+        } else {
+            g_form.addErrorMessage('No fields defined for the selected task type.');
+            isFormValid = false;
+        }
+    }
+
+    // Show a general message if the form is invalid
+    if (!isFormValid) {
+        g_form.addErrorMessage('Please fill out all mandatory fields before submitting.');
+    }
+
+    return isFormValid;
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-22 05:46:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a9de6da7c388521061f2b92ed4013192</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>doc control section validation test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name>sys_script_client_a9de6da7c388521061f2b92ed4013192</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-22 16:04:25</sys_updated_on>
+        <table>x_1329978_new_la_0_lup_task_table</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

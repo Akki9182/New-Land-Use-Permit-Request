@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>task_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>hide sections based on task type values</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    // The value of the "task_type" field
+    var stageValue = g_form.getValue('task_type'); // Ensure 'task_type' is the correct field name
+
+    // Control the visibility of the "document_controlqualitycheck" section
+    if (stageValue === 'document control quality check') {
+        g_form.setSectionDisplay('document_controlqualitycheck', true);
+        g_form.setSectionDisplay('presubmission', false);
+        g_form.setSectionDisplay('technical_informationandpresentation', false);
+    } 
+    // Control the visibility of the "presubmission" section
+    else if (stageValue === 'pre-submission') {
+        g_form.setSectionDisplay('presubmission', true);
+        g_form.setSectionDisplay('document_controlqualitycheck', false);
+        g_form.setSectionDisplay('technical_informationandpresentation', false);
+    } 
+    // Control the visibility of the "technical_informationandpresentation" section
+    else if (stageValue === 'technical information and presentation content') {
+        g_form.setSectionDisplay('technical_informationandpresentation', true);
+        g_form.setSectionDisplay('document_controlqualitycheck', false);
+        g_form.setSectionDisplay('presubmission', false);
+    } 
+    // Hide all sections if "task_type" does not match any condition
+    else {
+        g_form.setSectionDisplay('document_controlqualitycheck', false);
+        g_form.setSectionDisplay('presubmission', false);
+        g_form.setSectionDisplay('technical_informationandpresentation', false);
+    }
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-21 06:41:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dca2b097c340121061f2b92ed40131b3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>hide sections based on task type values</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name>sys_script_client_dca2b097c340121061f2b92ed40131b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:19:25</sys_updated_on>
+        <table>x_1329978_new_la_0_lup_task_table</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

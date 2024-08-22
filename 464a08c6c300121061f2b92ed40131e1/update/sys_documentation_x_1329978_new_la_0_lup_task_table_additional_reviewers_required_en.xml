@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="additional_reviewers_required" label="Additional Reviewers Required" language="en" table="x_1329978_new_la_0_lup_task_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>additional_reviewers_required</element>
+            <help/>
+            <hint/>
+            <label>Additional Reviewers Required</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <plural>Additional Reviewers Required</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 09:22:09</sys_created_on>
+            <sys_id>a91e0843c38c161061f2b92ed4013175</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Additional Reviewers Required</sys_name>
+            <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+            <sys_update_name>sys_documentation_x_1329978_new_la_0_lup_task_table_additional_reviewers_required_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-21 11:52:35</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

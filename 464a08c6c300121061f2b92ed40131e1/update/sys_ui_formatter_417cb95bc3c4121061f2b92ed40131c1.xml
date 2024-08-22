@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_formatter">
+    <sys_ui_formatter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <angular_module/>
+        <formatter>lup_task_variable_macro.xml</formatter>
+        <name>LUPR Variables</name>
+        <seismic_component/>
+        <sys_class_name>sys_ui_formatter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-21 12:04:22</sys_created_on>
+        <sys_id>417cb95bc3c4121061f2b92ed40131c1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>LUPR Variables</sys_name>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name>sys_ui_formatter_417cb95bc3c4121061f2b92ed40131c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-22 12:50:16</sys_updated_on>
+        <table>x_1329978_new_la_0_lup_task_table</table>
+        <type>formatter</type>
+    </sys_ui_formatter>
+</record_update>
