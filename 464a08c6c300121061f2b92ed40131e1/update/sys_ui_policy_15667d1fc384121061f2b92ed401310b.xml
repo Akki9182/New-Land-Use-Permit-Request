@@ -42,4 +42,15 @@
         <ui_type>0</ui_type>
         <view/>
     </sys_ui_policy>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>15667d1fc384121061f2b92ed401310b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-21 11:37:40</sys_created_on>
+        <sys_id>a4b6359fc384121061f2b92ed40131fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-21 11:37:40</sys_updated_on>
+        <table>sys_ui_policy</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

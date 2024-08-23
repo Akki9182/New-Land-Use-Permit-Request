@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>0</order>
+        <sc_cat_item display_value="New Land Use Permit Request">052b0c0ac300121061f2b92ed4013177</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-17 07:01:27</sys_created_on>
+        <sys_id>9f119002c340121061f2b92ed40131b8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Requester info.New Land Use Permit Request</sys_name>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name>io_set_item_9f119002c340121061f2b92ed40131b8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:24:52</sys_updated_on>
+        <variable_set display_value="Requester info">f70d84cac300121061f2b92ed4013194</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</application>
+        <file_path/>
+        <instance_id>1821c776ebf7c618e483f459bad0cd14</instance_id>
+        <instance_name>dev286127</instance_name>
+        <name>io_set_item_9f119002c340121061f2b92ed40131b8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>0</order><sc_cat_item display_value="New Land Use Permit Request">052b0c0ac300121061f2b92ed4013177</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-17 07:01:27</sys_created_on><sys_id>9f119002c340121061f2b92ed40131b8</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Requester info.New Land Use Permit Request</sys_name><sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package><sys_policy/><sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope><sys_update_name>io_set_item_9f119002c340121061f2b92ed40131b8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-17 07:24:52</sys_updated_on><variable_set display_value="Requester info">f70d84cac300121061f2b92ed4013194</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>1345205075</payload_hash>
+        <record_name>Requester info.New Land Use Permit Request</record_name>
+        <reverted_from/>
+        <source>ca4a08c6c300121061f2b92ed40131e5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-17 07:24:52</sys_created_on>
+        <sys_id>d276544ac340121061f2b92ed401314d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1915f398d6b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-17 07:24:52</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>d676544acf401210fa10f240d08ddb4c</update_guid>
+        <update_guid_history>d676544acf401210fa10f240d08ddb4c:1345205075,0421908240401210019929b43cd0d743:466010070,df11508243401210077dbc254ea52d6e:799914324</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Requester info.New Land Use Permit Request">a72d8596c384521061f2b92ed40131cf</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-18 06:02:22</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>06efb30bbf904eb1861e83cc379b1211</sys_id>
+        <sys_metadata>9f119002c340121061f2b92ed40131b8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Requester info.New Land Use Permit Request</sys_name>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_scope_delete display_value="">46537b57e90f4808b2b37eeb080d2840</sys_scope_delete>
+        <sys_update_name>io_set_item_9f119002c340121061f2b92ed40131b8</sys_update_name>
+        <sys_update_version display_value="io_set_item_9f119002c340121061f2b92ed40131b8">d276544ac340121061f2b92ed401314d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-18 06:02:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

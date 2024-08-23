@@ -3,7 +3,7 @@
         <inactive>false</inactive>
         <order>100</order>
         <published_ref/>
-        <question display_value="* LUP Period of Use">0f98140ec340121061f2b92ed401314d</question>
+        <question display_value="LUP Period of Use">0f98140ec340121061f2b92ed401314d</question>
         <sys_class_name>question_choice</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-08-17 07:35:30</sys_created_on>

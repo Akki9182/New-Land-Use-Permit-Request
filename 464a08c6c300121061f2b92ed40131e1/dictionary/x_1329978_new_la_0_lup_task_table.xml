@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="0c8097fac308161061f2b92ed40131eb" extends="task" label="LUP TASK  TABLE" max_length="40" name="x_1329978_new_la_0_lup_task_table" type="collection">
+        <element choice="1" label="Used templates and forms are up to date" max_length="40" name="used_templates_and_forms_are_up_to_date" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="0" value="No"/>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="Yes"/>
+            </choice>
+        </element>
+        <element choice="1" label="Templates and forms are filled out correctly" max_length="40" name="templates_and_forms" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="0" value="No"/>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="Yes"/>
+            </choice>
+        </element>
+        <element label="Presented at LUC Meeting" max_length="255" name="presented_at_luc_meeting" type="boolean"/>
+        <element choice="3" label="This request is part of an approved Sector LUP Master Plan. (Select 'No' if this" max_length="40" name="this_request_is_part_of_an_approved_sector_lup_master_plan" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="0" value="No"/>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="Yes"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Area requested is optimized in alignment with the Minimal Footprint and Land Upt" max_length="40" name="arearequestedisoptimized" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="0" value="no"/>
+            </choice>
+        </element>
+        <element choice="1" label="Task type" max_length="40" name="task_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Document Control Quality Check" sequence="1" value="document control quality check"/>
+                <element inactive_on_update="false" label="Pre-Submission" sequence="0" value="pre-submission"/>
+                <element inactive_on_update="false" label="Technical Information and Presentation Content" sequence="2" value="technical information and presentation content"/>
+                <element inactive_on_update="false" label="LUC Consideration" sequence="4" value="luc consideration"/>
+                <element inactive_on_update="false" label="Submission &amp; Review" sequence="3" value="submission &amp; review"/>
+                <element inactive_on_update="false" label="Final Decision" sequence="5" value="final decision"/>
+            </choice>
+        </element>
+        <element label="Add attachement" max_length="40" name="u_file_attachment_1" type="file_attachment"/>
+        <element label="BOD Meeting Number" max_length="255" name="bod_meeting_number" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="4000" name="the_visual_impactis_considered_comments" type="string"/>
+        <element label="Upload signed LUCS review form" max_length="255" name="upload_signed_lucs_review_form" type="boolean"/>
+        <element label="Presentation sent to CEO Office" max_length="255" name="presentation_sent_to_ceo_office" type="boolean"/>
+        <element label="Presented to BoD" max_length="255" name="presented_to_bod" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="LUP Request is within Nature Reserve Master Plan (CMP). (multiple selections all" max_length="40" name="luprequestiswithinnaturereservemasterplan" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Marine Zones" sequence="2" value="marine zones"/>
+                <element inactive_on_update="false" label="Coastal Zones" sequence="1" value="coastal zones"/>
+                <element inactive_on_update="false" label="Nature Reserve Master Plan (CMP)" sequence="0" value="nature reserve master plan (cmp)"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="The request incorporates the 'Alignment with NEOM Master Plans' guidelines elabo" max_length="40" name="neom_master_plans" type="string">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="0" value="no"/>
+                <element inactive_on_update="false" label="Not applicable" sequence="2" value="not applicable"/>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="yes"/>
+            </choice>
+        </element>
+        <element choice="1" label="The total requested LUP area is consistent with the area indicated on the slides" max_length="40" name="total_requested_lup_area" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="0" value="No"/>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="Yes"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Additional Reviewers" max_length="40" name="additional_reviewers" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Wind Garden" sequence="5" value="wind garden"/>
+                <element inactive_on_update="false" label="Sindalah" sequence="6" value="sindalah"/>
+                <element inactive_on_update="false" label="TROJENA" sequence="2" value="trojena"/>
+                <element inactive_on_update="false" label="Gulf of Aqaba" sequence="4" value="gulf of aqaba"/>
+                <element inactive_on_update="false" label="The Line" sequence="1" value="the line"/>
+                <element inactive_on_update="false" label="OXAGON" sequence="3" value="oxagon"/>
+                <element inactive_on_update="false" label="Proponent" sequence="0" value="proponent"/>
+                <element inactive_on_update="false" label="NEOM Archipelago" sequence="7" value="neom archipelago"/>
+                <element inactive_on_update="false" label="Tanmiah" sequence="8" value="tanmiah"/>
+            </choice>
+        </element>
+        <element label="Regional Planning Review is completed (Select 'No' if RP review is overdue)" max_length="40" name="regional_planning_review_is_completed_select_no_if_rp_review_is_overdue" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="0" value="No"/>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="Yes"/>
+            </choice>
+        </element>
+        <element label="Comments" max_length="100000" name="pre_submission_comments" type="string"/>
+        <element choice="1" label="GIS file formats are Shapefiles (.shp) or GeoDatabase (.gdb)" max_length="40" name="gis_file_formats" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="0" value="No"/>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="Yes"/>
+            </choice>
+        </element>
+        <element label="LUC Meeting Documentation and Presentation Ready" max_length="255" name="luc_meeting_documentation_and_presentation_ready" type="boolean"/>
+        <element choice="1" label="Submitted documentation is complete" max_length="40" name="submitted_documentation_is_complete" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="0" value="No"/>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="Yes"/>
+            </choice>
+        </element>
+        <element label="Comments " max_length="4000" name="tanmiah_analysis_report_comments" type="string"/>
+        <element choice="1" label="This request is integrated with a planned Sector LUP Master Plan." max_length="40" name="planned_sector_lup_master_plan" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="Yes"/>
+                <element inactive_on_update="false" label="Not applicable" sequence="2" value="Not applicable"/>
+                <element inactive_on_update="false" label="No" sequence="0" value="No"/>
+            </choice>
+        </element>
+        <element choice="1" label="Document Control Quality Check" max_length="40" name="document_control_quality_check" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Validated" sequence="0" value="Validated"/>
+                <element inactive_on_update="false" label="Incomplete" sequence="1" value="Incomplete"/>
+            </choice>
+        </element>
+        <element choice="1" label="Tanmiah Analysis Report is included in the submission and provides comprehensive" max_length="40" name="tanmiah_analysis_report" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="0" value="No"/>
+                <element inactive_on_update="false" label="Not applicable" sequence="2" value="Not applicable"/>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="Yes"/>
+            </choice>
+        </element>
+        <element label="Generate Certificate" max_length="255" name="generate_certificate" type="boolean"/>
+        <element label="Date of BOD Meeting" max_length="255" name="date_of_bod_meeting" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="The visual impact is considered and application complies with Section 7.1.2 of t" max_length="40" name="thevisualimpactisconsidered" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="0" value="no"/>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="yes"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Additional Reviewers Required" max_length="40" name="additional_reviewers_required" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="0" value="no"/>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="yes"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="4000" name="applicantprovidedevidencecomments" type="string"/>
+        <element label="Generate LUP Number" max_length="255" name="generate_lup_number" type="integer"/>
+        <element label="Sent Minutes of Meeting to Applicant" max_length="255" name="sent_minutes_of_meeting_to_applicant" type="boolean"/>
+        <element label="GIS Validation Completed" max_length="255" name="gis_validation_completed" type="boolean"/>
+        <element label="Upload to GeoExplorer" max_length="255" name="upload_to_geoexplore0" type="boolean"/>
+        <element label="Update GIS Portal" max_length="255" name="update_gis_portal" type="boolean"/>
+        <element label="Submit for Further Review" max_length="255" name="submit_for_further_review" type="boolean"/>
+        <element label="Comments" max_length="4000" name="document_control_quality_checkcomment" type="string"/>
+        <element choice="1" label="GIS files clearly designate the extent of the Land Use Permit area being request" max_length="40" name="gis_files" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="Yes"/>
+                <element inactive_on_update="false" label="No" sequence="0" value="No"/>
+            </choice>
+        </element>
+        <element choice="1" label="Subsequent Sector Review Required" max_length="40" name="subsequent_sector_review_required" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="0" value="No"/>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="Yes"/>
+            </choice>
+        </element>
+        <element label="Comments" max_length="4000" name="approved_sector_lup_master_comments" type="string"/>
+        <element label="Sector Review Version of Submission Received" max_length="255" name="sector_review_version_of_submission_received" type="boolean"/>
+        <element label="BoD Resolution Number" max_length="40" name="bod_resolution_number" type="string"/>
+        <element label="Upload to GIS" max_length="255" name="upload_to_gis" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="4000" name="masterplanandlupoverlapanalysis_comments" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="40" name="arearequestedisoptimizedcomments" type="string"/>
+        <element choice="1" label="Technical Information and Presentation Content" max_length="40" name="technical_information_and_presentation_content" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Validated" sequence="0" value="Validated"/>
+                <element inactive_on_update="false" label="Additional Information Required" sequence="1" value="Additional Information Required"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="4000" name="neom_maser_plan_comments" type="string"/>
+        <element choice="3" label="Vertical datum is to EGM2008 and as per NEOM-MEN-PRC-002  Topographical Survey P" max_length="40" name="vertical_datum_is_to_egm2008" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="0" value="No"/>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="Yes"/>
+            </choice>
+        </element>
+        <element label="Request for LUC meeting to CEO Office sent" max_length="255" name="request_for_luc_meeting" type="boolean"/>
+        <element label="LUP Request " max_length="32" name="lup_request" reference="x_1329978_new_la_0_lup_request" type="reference"/>
+        <element choice="1" label="Prescreening and Review Completed By" max_length="40" name="prescreening_and_review_completed_by" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="LUC Team" sequence="0" value="LUC Team"/>
+                <element inactive_on_update="false" label="LUCS GIS Team" sequence="1" value="LUCS GIS Team"/>
+            </choice>
+        </element>
+        <element choice="1" label="LUC Consideration Outcome" max_length="40" name="luc_consideration_outcome" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Endorsed" sequence="0" value="Endorsed"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="Rejected"/>
+                <element inactive_on_update="false" label="Returned to Applicant" sequence="1" value="Returned to Applicant"/>
+            </choice>
+        </element>
+        <element choice="1" label="Outcome of Review" max_length="40" name="outcome_of_review" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Validated" sequence="0" value="Validated"/>
+                <element inactive_on_update="false" label="Returned to Applicant" sequence="1" value="Returned to Applicant"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="Rejected"/>
+            </choice>
+        </element>
+        <element label="Latest Area requirements incorporated into GIS system" max_length="255" name="latest_area_requirements_incorporated_into_gis_system" type="boolean"/>
+        <element label="LUC Meeting Number" max_length="255" name="luc_meeting_number" type="integer"/>
+        <element choice="1" label="Name of Reviewer" max_length="40" name="name_of_reviewer" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="LUCS GIS Team" sequence="1" value="LUCS GIS Team"/>
+                <element inactive_on_update="false" label="LUC Team" sequence="0" value="LUC Team"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Name of Reviewer" max_length="40" name="nameofreviewer" type="choice">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="6&#9;Name of Reviewer &#9;LUC Team &#9;LUCS GIS Team 7&#9;Outcome of Review &#9;Validated &#9;Returned to Applicant &#9;R" sequence="0" value="6&#9;name of reviewer &#9;luc team &#9;lucs gis team 7&#9;outcome of review &#9;validated &#9;returned to applicant &#9;rejected"/>
+                <element inactive_on_update="false" label="LUCS GIS Team" sequence="1" value="lucs gis team"/>
+                <element inactive_on_update="false" label="LUC Team" sequence="0" value="luc team"/>
+            </choice>
+        </element>
+        <element choice="1" label="Outcome of RP Review (Select 'Not applicable' if RP Review is overdue)" max_length="40" name="outcome_of_rp_review_select_not_applicable_if_rp_review_is_overdue" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rejected/Returned to Applicant" sequence="1" value="Rejected/Returned to Applicant"/>
+                <element inactive_on_update="false" label="Not applicable" sequence="2" value="Not applicable"/>
+                <element inactive_on_update="false" label="Validated" sequence="0" value="Validated"/>
+            </choice>
+        </element>
+        <element choice="1" label="GIS Validation" max_length="40" name="u_1_gis_validation" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Compliant" sequence="0" value="Compliant"/>
+                <element inactive_on_update="false" label="Non-compliant" sequence="1" value="Non-compliant"/>
+            </choice>
+        </element>
+        <element label="Document Control Quality Check Completed" max_length="255" name="document_control_quality_check_completed" type="boolean"/>
+        <element label="Conditions Report Submitted" max_length="255" name="conditions_report_submitted" type="boolean"/>
+        <element choice="1" label="Final Decision Outcome" max_length="40" name="final_decision_outcome" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approval" sequence="0" value="Approval"/>
+                <element inactive_on_update="false" label="Rejection" sequence="1" value="Rejection"/>
+                <element inactive_on_update="false" label="Request to be Represented" sequence="2" value="Request to be Represented"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="The application considers and includes the following maps; master plan and LUP o" max_length="40" name="masterplanandlupoverlapanalysis" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+            </choice>
+        </element>
+        <element label="Extract of minutes uploaded" max_length="255" name="extract_of_minutes_uploaded" type="boolean"/>
+        <element label="Technical Information and Presentation Content Completed" max_length="40" name="technicalinformationandpresentationcontentcompleted" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="4000" name="cmp_comments" type="string"/>
+        <element label="Board Presentation Prepared" max_length="255" name="board_presentation_prepared" type="boolean"/>
+        <element label="Upload proof of outcome email" max_length="255" name="upload_proof_of_outcome_email" type="boolean"/>
+        <element label="Add attachment" max_length="255" name="add_attachment" type="file_attachment"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Applicant provided evidence that the assets will be decommissioned before the co" max_length="40" name="applicant_provided_evidence" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="yes"/>
+                <element inactive_on_update="false" label="Not applicable" sequence="2" value="not applicable"/>
+                <element inactive_on_update="false" label="No" sequence="0" value="no"/>
+            </choice>
+        </element>
+        <element choice="1" label="Coordinate system is WGS 1984 UTM Zone 36N; Transverse Mercator Projection &amp; Dat" max_length="40" name="coordinate_system" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="1" value="Yes"/>
+                <element inactive_on_update="false" label="No" sequence="0" value="No"/>
+            </choice>
+        </element>
+        <element label="Requested by" max_length="32" name="requested_by" reference="sys_user" type="reference"/>
+        <element label="Include in agenda for LUC Meeting" max_length="255" name="include_in_agenda_for_luc_meeting" type="boolean"/>
+        <element label="Conditions Fulfilled" max_length="255" name="conditions_fulfilled" type="boolean"/>
+    </element>
+</database>

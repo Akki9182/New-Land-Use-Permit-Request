@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="additional_reviewers" table="x_1329978_new_la_0_lup_task_table" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>additional_reviewers</element>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 09:22:10</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>additional_reviewers</sys_name>
+            <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+            <sys_update_name>sys_choice_x_1329978_new_la_0_lup_task_table_additional_reviewers</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 09:22:10</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>additional_reviewers</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Proponent</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 09:22:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 09:22:10</sys_updated_on>
+            <value>proponent</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>additional_reviewers</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>The Line</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 09:22:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 09:22:10</sys_updated_on>
+            <value>the line</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>additional_reviewers</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TROJENA</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 09:22:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 09:22:10</sys_updated_on>
+            <value>trojena</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>additional_reviewers</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OXAGON</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 09:22:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 09:22:10</sys_updated_on>
+            <value>oxagon</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>additional_reviewers</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Gulf of Aqaba</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 09:22:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 09:22:10</sys_updated_on>
+            <value>gulf of aqaba</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>additional_reviewers</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wind Garden</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 09:22:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 09:22:11</sys_updated_on>
+            <value>wind garden</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>additional_reviewers</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sindalah</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 09:22:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 09:22:11</sys_updated_on>
+            <value>sindalah</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>additional_reviewers</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NEOM Archipelago</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 09:22:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 09:22:11</sys_updated_on>
+            <value>neom archipelago</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>additional_reviewers</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tanmiah</label>
+            <language>en</language>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 09:22:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 09:22:11</sys_updated_on>
+            <value>tanmiah</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

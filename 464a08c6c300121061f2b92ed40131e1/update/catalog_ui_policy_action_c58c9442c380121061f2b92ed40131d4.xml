@@ -22,7 +22,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-08-17 07:51:17</sys_updated_on>
         <table/>
-        <ui_policy display_value="New Land Use Permit Request UI policy">996c5802c380121061f2b92ed4013160</ui_policy>
+        <ui_policy display_value="Make 'expiry_date' mandatory &amp; visible depending on 'lup_period_of_use'">996c5802c380121061f2b92ed4013160</ui_policy>
         <value/>
         <value_action>ignore</value_action>
         <variable>expiry_date</variable>

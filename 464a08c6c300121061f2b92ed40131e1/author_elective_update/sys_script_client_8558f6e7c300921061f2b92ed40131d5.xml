@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>state</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>test to make section mandatory </name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading) {
+        return;
+    }
+
+    // Define the state field and section name
+    var stateField = 'state'; // Replace with the actual name of your state field
+    var sectionName = 'presubmission'; // Replace with the actual name of your section
+    
+    // Get the current value of the state field
+    var stateValue = g_form.getValue(stateField);
+
+    // Get all fields in the form
+    var allFields = g_form.getEditableFields(); // Get all editable fields on the form
+    
+    // Loop through each field
+    for (var i = 0; i < allFields.length; i++) {
+        var fieldName = allFields[i];
+        
+        // Get the field's section name
+        var fieldSectionName = getSectionName(fieldName);
+        
+        // Check if the field belongs to the specified section
+        if (fieldSectionName === sectionName) {
+            // Make the field mandatory based on the state value
+            g_form.setMandatory(fieldName, stateValue === '3');
+        }
+    }
+}
+
+// Helper function to get the section name for a given field
+function getSectionName(fieldName) {
+    var fieldElement = g_form.getControl(fieldName);
+    
+    if (fieldElement) {
+        var sectionElement = fieldElement.closest('.section'); // Find the closest section element
+        if (sectionElement) {
+            return sectionElement.getAttribute('data-section'); // Adjust if needed
+        }
+    }
+    return '';
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-22 11:09:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8558f6e7c300921061f2b92ed40131d5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>test to make section mandatory </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name>sys_script_client_8558f6e7c300921061f2b92ed40131d5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-22 11:11:12</sys_updated_on>
+        <table>x_1329978_new_la_0_lup_task_table</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</application>
+        <file_path/>
+        <instance_id>1821c776ebf7c618e483f459bad0cd14</instance_id>
+        <instance_name>dev286127</instance_name>
+        <name>sys_script_client_8558f6e7c300921061f2b92ed40131d5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;state&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;test to make section mandatory &lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading) {
+        return;
+    }
+
+    // Define the state field and section name
+    var stateField = 'state'; // Replace with the actual name of your state field
+    var sectionName = 'presubmission'; // Replace with the actual name of your section
+    
+    // Get the current value of the state field
+    var stateValue = g_form.getValue(stateField);
+
+    // Get all fields in the form
+    var allFields = g_form.getEditableFields(); // Get all editable fields on the form
+    
+    // Loop through each field
+    for (var i = 0; i &lt; allFields.length; i++) {
+        var fieldName = allFields[i];
+        
+        // Get the field's section name
+        var fieldSectionName = getSectionName(fieldName);
+        
+        // Check if the field belongs to the specified section
+        if (fieldSectionName === sectionName) {
+            // Make the field mandatory based on the state value
+            g_form.setMandatory(fieldName, stateValue === '3');
+        }
+    }
+}
+
+// Helper function to get the section name for a given field
+function getSectionName(fieldName) {
+    var fieldElement = g_form.getControl(fieldName);
+    
+    if (fieldElement) {
+        var sectionElement = fieldElement.closest('.section'); // Find the closest section element
+        if (sectionElement) {
+            return sectionElement.getAttribute('data-section'); // Adjust if needed
+        }
+    }
+    return '';
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-22 11:09:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8558f6e7c300921061f2b92ed40131d5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;test to make section mandatory &lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0"&gt;464a08c6c300121061f2b92ed40131e1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="New Land Use Permit Request"&gt;464a08c6c300121061f2b92ed40131e1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_8558f6e7c300921061f2b92ed40131d5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-22 11:11:12&lt;/sys_updated_on&gt;&lt;table&gt;x_1329978_new_la_0_lup_task_table&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1295462737</payload_hash>
+        <record_name>test to make section mandatory </record_name>
+        <reverted_from/>
+        <source>ca4a08c6c300121061f2b92ed40131e5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-22 11:11:12</sys_created_on>
+        <sys_id>ae3abaefc3cc521061f2b92ed40131e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19179c88ff00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-22 11:11:12</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>663abaef95cc5210cbecdd97ea5e1ce0</update_guid>
+        <update_guid_history>663abaef95cc5210cbecdd97ea5e1ce0:-1295462737,b6b9766ba80092109ac1b33304186e18:1013333447</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-22 11:27:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>a654868a623f42f2a797fd15687d1309</sys_id>
+        <sys_metadata>8558f6e7c300921061f2b92ed40131d5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test to make section mandatory </sys_name>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_parent display_value="LUP TASK  TABLE">0c8097fac308161061f2b92ed40131eb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_scope_delete display_value="">46537b57e90f4808b2b37eeb080d2840</sys_scope_delete>
+        <sys_update_name>sys_script_client_8558f6e7c300921061f2b92ed40131d5</sys_update_name>
+        <sys_update_version display_value="sys_script_client_8558f6e7c300921061f2b92ed40131d5">ae3abaefc3cc521061f2b92ed40131e0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-22 11:27:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

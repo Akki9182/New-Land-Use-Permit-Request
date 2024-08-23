@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New Section" section_id="2831ebb2c388161061f2b92ed4013146" sys_domain="global" table="x_1329978_new_la_0_lup_task_table" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_requested_lup_area</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 06:06:02</sys_created_on>
+            <sys_id>f431ebb2c388161061f2b92ed40131d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">2831ebb2c388161061f2b92ed4013146</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 06:06:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>x_1329978_new_la_0_lup_task_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-20 06:06:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2831ebb2c388161061f2b92ed4013146</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1329978_new_la_0_lup_task_table</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+            <sys_update_name>sys_ui_section_2831ebb2c388161061f2b92ed4013146</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-20 06:06:01</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</application>
+        <file_path/>
+        <instance_id>1821c776ebf7c618e483f459bad0cd14</instance_id>
+        <instance_name>dev286127</instance_name>
+        <name>sys_ui_section_2831ebb2c388161061f2b92ed4013146</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New Section" section_id="2831ebb2c388161061f2b92ed4013146" sys_domain="global" table="x_1329978_new_la_0_lup_task_table" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>total_requested_lup_area</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-20 06:06:02</sys_created_on><sys_id>f431ebb2c388161061f2b92ed40131d4</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New Section" display_value="New Section" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">2831ebb2c388161061f2b92ed4013146</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-20 06:06:02</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>New Section</caption><header>false</header><name>x_1329978_new_la_0_lup_task_table</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-20 06:06:01</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2831ebb2c388161061f2b92ed4013146</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1329978_new_la_0_lup_task_table</sys_name><sys_overrides/><sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package><sys_policy/><sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope><sys_update_name>sys_ui_section_2831ebb2c388161061f2b92ed4013146</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-20 06:06:01</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1671280250</payload_hash>
+        <record_name>LUP TASK  TABLE</record_name>
+        <reverted_from/>
+        <source>ca4a08c6c300121061f2b92ed40131e5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-20 06:06:02</sys_created_on>
+        <sys_id>bc31ebb2c388161061f2b92ed40131e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1916e64737d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-20 06:06:02</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>7c31ebb204881610f5d5cbb89cd81ad5</update_guid>
+        <update_guid_history>7c31ebb204881610f5d5cbb89cd81ad5:-1671280250</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-20 06:07:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>648c1a7960684a6fbe8c1a4ee3bed7e9</sys_id>
+        <sys_metadata>2831ebb2c388161061f2b92ed4013146</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Section</sys_name>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_parent display_value="LUP TASK  TABLE">0c8097fac308161061f2b92ed40131eb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_scope_delete display_value="">46537b57e90f4808b2b37eeb080d2840</sys_scope_delete>
+        <sys_update_name>sys_ui_section_2831ebb2c388161061f2b92ed4013146</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_2831ebb2c388161061f2b92ed4013146">bc31ebb2c388161061f2b92ed40131e2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-20 06:07:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

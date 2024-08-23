@@ -13,7 +13,7 @@
         <label>LUP TASK  TABLE</label>
         <live_feed_enabled>false</live_feed_enabled>
         <name>x_1329978_new_la_0_lup_task_table</name>
-        <number_ref/>
+        <number_ref display_value="LUPT">da10408fc30c161061f2b92ed40131bf</number_ref>
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
