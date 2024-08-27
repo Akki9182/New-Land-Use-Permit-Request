@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="70da040ac300121061f2b92ed40131ac" extends="task" label="LUP Request" max_length="40" name="x_1329978_new_la_0_lup_request" type="collection">
         <element label="Requested by" max_length="32" name="requested_by" read_only="true" reference="sys_user" type="reference"/>
+        <element label="request number" max_length="32" name="request_number" reference="x_1329978_new_la_0_lup_request" type="reference"/>
         <element choice="1" label="Stage" max_length="40" name="stage" type="choice">
             <choice/>
         </element>
-        <element label="Record producer" max_length="32" name="record_producer" reference="x_1329978_new_la_0_lup_request" type="reference"/>
+        <element label="Record producer" max_length="32" name="record_producer" reference="sc_cat_item_producer" type="reference"/>
     </element>
 </database>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="record_producer" label="Record producer" language="en" table="x_1329978_new_la_0_lup_request">
+    <sys_documentation element="lupr_state" label="LUPR State" language="en" table="x_1329978_new_la_0_lup_task_table">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>record_producer</element>
+            <element>lupr_state</element>
             <help/>
             <hint/>
-            <label>Record producer</label>
+            <label>LUPR State</label>
             <language>en</language>
-            <name>x_1329978_new_la_0_lup_request</name>
+            <name>x_1329978_new_la_0_lup_task_table</name>
             <plural/>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-08-18 06:49:03</sys_created_on>
+            <sys_created_on>2024-08-24 14:20:22</sys_created_on>
             <sys_mod_count>5</sys_mod_count>
-            <sys_name>Record producer</sys_name>
+            <sys_name>LUPR State</sys_name>
             <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
             <sys_policy/>
             <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
-            <sys_update_name>sys_documentation_x_1329978_new_la_0_lup_request_record_producer_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_1329978_new_la_0_lup_task_table_lupr_state_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-08-24 07:38:56</sys_updated_on>
+            <sys_updated_on>2024-08-24 15:27:41</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

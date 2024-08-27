@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1329978_new_la_0_lup_task_table</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>To Prevent Task3 before Task1&amp;2 Closed </name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    gs.info('Executing business rule to check Task 3 closure.');
+
+    // Query for Task 1 based on task type  lup_request=5c32fb78c39c161061f2b92ed4013111^short_descriptionINGIS Validation,Document Control Quality^lup_request= Check
+	//'short_descriptionINGIS Validation,Document Control Quality^lup_request='+current.lup_request
+    var task1 = new GlideRecord('x_1329978_new_la_0_lup_task_table');
+    task1.addQuery('task_type', 'Pre-Submission');
+    task1.addQuery('parent', current.parent);
+    task1.query();
+
+    var task1Closed = false;
+    if (task1.next()) {
+        gs.info('Task 1 found: ' + task1.number + ', State: ' + task1.state);
+        task1Closed = (task1.state == '3'); // Replace '3' if the state value is different
+    } else {
+        gs.info('Task 1 (Pre-Submission) not found.');
+    }
+
+    // Query for Task 2 based on task type
+    var task2 = new GlideRecord('x_1329978_new_la_0_lup_task_table');
+    task2.addQuery('task_type', 'Document Control Quality Check');
+    task2.addQuery('parent', current.parent);
+    task2.query();
+
+    var task2Closed = false;
+    if (task2.next()) {
+        gs.info('Task 2 found: ' + task2.number + ', State: ' + task2.state);
+        task2Closed = (task2.state == '3'); // Replace '3' if the state value is different
+    } else {
+        gs.info('Task 2 (Document Control Quality Check) not found.');
+    }
+
+    // Check if both Task 1 and Task 2 are closed
+    if (!task1Closed || !task2Closed) {
+        gs.info('Task 3 cannot be closed because Task 1 or Task 2 is not closed.');
+        gs.addErrorMessage('You cannot close Task 3 until both Task 1 and Task 2 are closed.');
+        current.setAbortAction(true); // Prevent Task 3 from being closed
+    } else {
+        gs.info('Both Task 1 and Task 2 are closed. Task 3 can be closed.');
+    }
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 12:50:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2fc67b7cc39c161061f2b92ed401314a</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>To Prevent Task3 before Task1&amp;2 Closed </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name>sys_script_2fc67b7cc39c161061f2b92ed401314a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 06:00:46</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=2fc67b7cc39c161061f2b92ed401314a"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>2fc67b7cc39c161061f2b92ed401314a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 12:50:50</sys_created_on>
+        <sys_id>f867f330c3dc161061f2b92ed401313a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 12:50:50</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

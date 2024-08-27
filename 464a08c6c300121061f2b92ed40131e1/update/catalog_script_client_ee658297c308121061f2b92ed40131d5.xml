@@ -5,7 +5,7 @@
         <applies_extended>false</applies_extended>
         <applies_req_item>false</applies_req_item>
         <applies_sc_task>false</applies_sc_task>
-        <applies_target_record>false</applies_target_record>
+        <applies_target_record>true</applies_target_record>
         <applies_to>item</applies_to>
         <cat_item display_value="New Land Use Permit Request">052b0c0ac300121061f2b92ed4013177</cat_item>
         <cat_variable/>
@@ -19,15 +19,44 @@
         <order/>
         <published_ref/>
         <script><![CDATA[function onLoad() {
-    // Access the catalog variable by its ID
-    var myVar = document.getElementById('IO:title_of_proposal'); // Using the correct variable name
-
-    // Check if the element exists
-    if (myVar) {
-        // Set the placeholder attribute
-        myVar.setAttribute('placeholder', 'Enter your comment here...');
-    }
+    // Ensure the DOM is ready before attempting to modify it
+    setTimeout(addHelpText, 500); // Delay to ensure form elements are available
 }
+
+function addHelpText() {
+    // Get the form element for the description field
+    var descriptionField = g_form.getFormElement('title_of_proposal');
+    
+    if (descriptionField) {
+        // Check if help text is already added to avoid duplicates
+        if (descriptionField.nextSibling && descriptionField.nextSibling.className === 'custom-help-text') {
+            return;
+        }
+        
+        // Create a new div for help text
+        var helpTextDiv = document.createElement('div');
+        helpTextDiv.className = 'custom-help-text'; // Custom class for styling
+        helpTextDiv.innerHTML = 'This is the help text that provides additional information about the description field.';
+        
+        // Insert the help text after the description field
+        descriptionField.parentNode.insertBefore(helpTextDiv, descriptionField.nextSibling);
+    } else {
+       
+    }g_form.addInfoMessage('Description field not found.');
+}
+
+// Add custom CSS for the help text
+(function() {
+    var style = document.createElement('style');
+    style.innerHTML = `
+        .custom-help-text {
+            color: #007cba; /* Custom color for the help text */
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    `;
+    document.head.appendChild(style);
+})();
 ]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -35,7 +64,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ee658297c308121061f2b92ed40131d5</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>hint text for description</sys_name>
         <sys_overrides/>
         <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
@@ -43,11 +72,11 @@
         <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
         <sys_update_name>catalog_script_client_ee658297c308121061f2b92ed40131d5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-21 12:55:20</sys_updated_on>
+        <sys_updated_on>2024-08-27 11:10:23</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>
-        <va_supported>false</va_supported>
+        <va_supported>true</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>

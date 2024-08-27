@@ -1,0 +1,1656 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,timeFromCreateToActivate=132874000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>lup_request_processing</internal_name>
+        <label_cache>[{"name":"04dfd07a-75ba-4d41-aea4-f35bc762a57c.Record","label":"10 - Create Task➛x_1329978_new_la_0_lup_task_table Record","reference":"x_1329978_new_la_0_lup_task_table","reference_display":"LUP TASK  TABLE","type":"reference","base_type":"reference","usedInstances":{"59267b2b-7bc4-4bd8-9919-1f02a2bf096a":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"04dfd07a-75ba-4d41-aea4-f35bc762a57c.Record.outcome_of_review","label":"10 - Create Task➛x_1329978_new_la_0_lup_task_table Record➛Outcome of Review","reference":"","reference_display":"Outcome of Review","type":"choice","base_type":"choice","parent_table_name":"x_1329978_new_la_0_lup_task_table","column_name":"outcome_of_review","choices":[{"label":"-- None --","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"reference":false,"label":"Rejected","image":"","selected":false,"missing":false,"rawLabel":"Rejected","value":"Rejected","parameters":{"name":"x_1329978_new_la_0_lup_task_table","dependent_values":[""]}},{"used":false,"reference":false,"label":"Validated","image":"","selected":false,"missing":false,"rawLabel":"Validated","value":"Validated","parameters":{"name":"x_1329978_new_la_0_lup_task_table","dependent_values":[""]}},{"used":false,"reference":false,"label":"Returned to Applicant","image":"","selected":false,"missing":false,"rawLabel":"Returned to Applicant","value":"Returned to Applicant","parameters":{"name":"x_1329978_new_la_0_lup_task_table","dependent_values":[""]}}],"usedInstances":{"e05cd300-b56b-4929-a8ab-2578e3bf0e7c":["condition"]}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛LUP Request Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1329978_new_la_0_lup_request","column_name":"sys_id","usedInstances":{"57470def-071e-419e-84db-e591b1d8176c":["request_number"]}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛LUP Request Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1329978_new_la_0_lup_request","column_name":"number","usedInstances":{"5b44a3ef-c244-47a9-a015-4e308d3f1dee":["lup_request"],"57470def-071e-419e-84db-e591b1d8176c":["request_number"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛LUP Request Record","reference":"x_1329978_new_la_0_lup_request","reference_display":"LUP Request","type":"reference","base_type":"reference","usedInstances":{"c593951c-eaac-4c26-8e16-3c44b44a7fa5":["lup_request"],"87fb98e9-f38b-4fab-b956-63940dbaf325":["lup_request"],"5b44a3ef-c244-47a9-a015-4e308d3f1dee":["lup_request"],"04dfd07a-75ba-4d41-aea4-f35bc762a57c":["lup_request"],"69ae5196-9296-4ea1-92a1-8e3608bbefa6":["record"],"57470def-071e-419e-84db-e591b1d8176c":["request_number","record"],"8ad63aa6-6971-4461-9a37-2b4856167cbf":["lup_request"],"f69af0c9-bc40-468f-9c75-8cb97af4f316":["field_values"],"fbfac51b-fb13-4673-b5f9-31a83f97de17":["field_values"]},"attributes":{}},{"name":"04dfd07a-75ba-4d41-aea4-f35bc762a57c.Record.outcome_of_rp_review_select_not_applicable_if_rp_review_is_overdue","label":"10 - Create Task➛x_1329978_new_la_0_lup_task_table Record➛Outcome of RP Review (Select \u0027Not applicable\u0027 if RP Review is overdue)","reference":"","reference_display":"Outcome of RP Review (Select \u0027Not applicable\u0027 if RP Review is overdue)","type":"choice","base_type":"choice","parent_table_name":"x_1329978_new_la_0_lup_task_table","column_name":"outcome_of_rp_review_select_not_applicable_if_rp_review_is_overdue","choices":[{"label":"-- None --","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"reference":false,"label":"Validated","image":"","selected":false,"missing":false,"rawLabel":"Validated","value":"Validated","parameters":{"name":"x_1329978_new_la_0_lup_task_table","dependent_values":[""]}},{"used":false,"reference":false,"label":"Rejected/Returned to Applicant","image":"","selected":false,"missing":false,"rawLabel":"Rejected/Returned to Applicant","value":"Rejected/Returned to Applicant","parameters":{"name":"x_1329978_new_la_0_lup_task_table","dependent_values":[""]}},{"used":false,"reference":false,"label":"Not applicable","image":"","selected":false,"missing":false,"rawLabel":"Not applicable","value":"Not applicable","parameters":{"name":"x_1329978_new_la_0_lup_task_table","dependent_values":[""]}}],"usedInstances":{}},{"name":"Created or Updated_1.current.request_number","label":"Trigger - Record Created or Updated➛LUP Request Record➛request number","reference":"x_1329978_new_la_0_lup_request","reference_display":"LUP Request","type":"reference","base_type":"reference","parent_table_name":"x_1329978_new_la_0_lup_request","column_name":"request_number","usedInstances":{}},{"name":"Created or Updated_1.current.request_number.sys_id","label":"Trigger - Record Created or Updated➛LUP Request Record➛request number➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1329978_new_la_0_lup_request","column_name":"sys_id","usedInstances":{"57470def-071e-419e-84db-e591b1d8176c":["request_number"]}},{"name":"Created or Updated_1.current.task_effective_number","label":"Trigger - Record Created or Updated➛LUP Request Record➛Effective number","reference":"","reference_display":"Effective number","type":"string","base_type":"string","parent_table_name":"x_1329978_new_la_0_lup_request","column_name":"task_effective_number","usedInstances":{"57470def-071e-419e-84db-e591b1d8176c":["request_number"]}},{"name":"Created or Updated_1.current.parent","label":"Trigger - Record Created or Updated➛LUP Request Record➛Parent","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","parent_table_name":"x_1329978_new_la_0_lup_request","column_name":"parent","usedInstances":{"57470def-071e-419e-84db-e591b1d8176c":["request_number"]}}]</label_cache>
+        <master_snapshot>49e08678c354161061f2b92ed4013139</master_snapshot>
+        <master_snapshot_digest/>
+        <name>LUP Request Processing</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>dde08678c354161061f2b92ed40131bb</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 01:45:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6b1f51f8c390161061f2b92ed4013132</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_name>LUP Request Processing</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name>sys_hub_flow_6b1f51f8c390161061f2b92ed4013132</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:10</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=6b1f51f8c390161061f2b92ed4013132"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6b1f51f8c390161061f2b92ed4013132"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1329978_new_la_0_lup_request">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dde08678c354161061f2b92ed40131bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 04:13:08</sys_updated_on>
+        <table>x_1329978_new_la_0_lup_request</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>6b1f51f8c390161061f2b92ed4013132</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 14:40:10</sys_created_on>
+        <sys_id>140a5159c3d8961061f2b92ed401310a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:10</sys_updated_on>
+        <trigger display_value="">dde08678c354161061f2b92ed40131bb</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=6b1f51f8c390161061f2b92ed4013132^sys_idNOT IN140a5159c3d8961061f2b92ed401310a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6b1f51f8c390161061f2b92ed4013132"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6b1f51f8c390161061f2b92ed4013132^sys_idNOT INeb1f51f8c390161061f2b92ed4013135"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6b1f51f8c390161061f2b92ed4013132</id>
+        <name>LUP Request Processing</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 01:45:33</sys_created_on>
+        <sys_id>eb1f51f8c390161061f2b92ed4013135</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 01:45:33</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=eb1f51f8c390161061f2b92ed4013135"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=6b1f51f8c390161061f2b92ed4013132^sys_idNOT IN1824a970c3d0161061f2b92ed40131eb,5c246d30c3d0161061f2b92ed4013102,dc24a970c3d0161061f2b92ed40131ee"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">961fcb9fd1e302104f34ba60d8b7c162</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</model>
+        <model_id>6b1f51f8c390161061f2b92ed4013132</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6b1f51f8c390161061f2b92ed4013132</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:07:26</sys_created_on>
+        <sys_id>1824a970c3d0161061f2b92ed40131eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 02:07:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1824a970c3d0161061f2b92ed40131eb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</model>
+        <model_id>6b1f51f8c390161061f2b92ed4013132</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6b1f51f8c390161061f2b92ed4013132</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:07:26</sys_created_on>
+        <sys_id>5c246d30c3d0161061f2b92ed4013102</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 02:07:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5c246d30c3d0161061f2b92ed4013102"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</model>
+        <model_id>6b1f51f8c390161061f2b92ed4013132</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6b1f51f8c390161061f2b92ed4013132</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:07:26</sys_created_on>
+        <sys_id>dc24a970c3d0161061f2b92ed40131ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 02:07:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dc24a970c3d0161061f2b92ed40131ee"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=6b1f51f8c390161061f2b92ed4013132"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6b1f51f8c390161061f2b92ed4013132"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=6b1f51f8c390161061f2b92ed4013132^sys_idNOT IN1424a970c3d0161061f2b92ed40131f4"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:07:27</sys_created_on>
+        <sys_id>1424a970c3d0161061f2b92ed40131f4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 03:03:36</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+Va21LjRhD9FZWekiqS0sW2MHkiXLJUscvGeDcPFJkajVq2KvLISCOBd4t/T49ulmXJ+AKJzfIA9sxouk9P9+kjibvvqk9t8NUTdUhtH9Qj1eMCQk794WwKOCzkMOF0IucmlDtUBOFMPRFhDEdqEDoQqif6kZpQP4bbWXTl4EW4NL0iv1zNp/H7E9FNo9+3jgmHR+JTohE/npIQHmKIBC50vGjq09nXfP31l8/KoJyc0hC3FdLkd5WNPd8Jgasnd/fotrTLXB30/rHGTAN/NM047uh2z7R1wzEpUA23qMOt+SkaUM9BwpMA7gCacqkfQUNAQqDODfdn5YoxxjOLyIQ+Rd433P1Yk+tcQN8ZZHNsHHgMbqbCC3g2kjmUTQZ+POGfMkdliMClsS+KEOFIHAFxYCp9k9Zy0+7tOHgcFIYuPZ7CyCf9gFG//EaFCD07FhDJyLqejzEmWRCiIA5TNwcXZzeDc/LX6fDsw8WADC5uh4Ors+HFufqc4iEPsdwx8zD3hWRwnstzvfTAlyfF44mN3hypEQu9qThlwksgd+f5aJ6VYcxxD1IGfik/s8iVIbz2MFFO7hBDEZ50S5x3r/MtBzFXAjwi/KWwOMTgCKU4fvdqQkd5UN3PRbalQckTJaEhIRMSzSIyjm2CYRuNMFYen8aC0E7X6eut+WcthCYtCdz6TlXvn+VpgQ9MVJLL/RJVv330osjjo0qQSowy95YhlugwSZUighnU6LCw3i9UWr6oKEtNa2Wf5exJallRo5s1OEZnHUMz7Z5mSdQ6fnR1zdK61HVMTbOPKxyzbL7VL1HL5iq4VayTj6xDO5022onSgvHXKI969AovqxW7Vu4li4mb72PIg87Z7WwPXauxtLkRTZcZlw2fLybeKmivzO7USShe4RQY12HvNVja9YNHpIYtGNqm7J9RGMTcqXOY3FPxuDJfofyUx+/nw2KwKlu7QQir8S6uOByUu/D0PH+KCqR8thVDG6YOVq/T05CYTcnJ3X7fZtRwXatnga7XGHpuuNGb/WLmFyoiaSqpNipszLakKUk34Of/38GdWDrPuUaOzub2n43PAu54KfplLi6mInXLUmWVzYuj+Pviz+VCzQZfqlVLsxynlZ2YXanVKqwGZ0QDwjepVe2tb9+yO8mtM2oSOOCfz7dTF/qBDEsRChJMIZQhwOvUr6fXZx9OP/1xcftb/vdycPOx+Dy8weseKRcREQGhjkMqgV4zdbOYrKcmHsfASQRCyO6yuaTgqK7Ta2hmpNJn5QErKbsEofIp4L9czdcpt4D9LE2nA+q6VW2xDmjcLFTeFWo7EOMlLYVIf8fxBaRS8rec+Q90S1wrrmQxipsLLmoYtK+bFrMQMwoutwM21TtGl/atnmn1aoKrZr7dsf2RXmuSRtJKP00SZ92iTBpru5Q8ddG0Rd7XMiDf2nxB7v24QdlJYhZl1vocYBtn91+VlvWNrobE99IH+rW+PvI9B4q53eitaiWZU9nm5MbsvtPtWi3kBm4TuVWNr3JMNMD+TzSr7F/SkVfXrnufeLtoSmkTSOBWpcZ5oOCEgkYUz1VyPQCOYs8UMQasZR9vYtGgIq0fmMaoSqxl5CVTv2vc2U3/krLEYSUvoAMCtrNorJXQrk/qwDFZ32kTjh2rlVvb1WNten8k5MZEkTTxzkrJtNm+9T0bRVMlzxcPe02N+I5Rv9lzxgYv9r/LSqeH2TFs0VsDzmrPK9gBv46PufcQA2FjykfZq/YC1yUeK1A2VrIlSrbkcJFS/5HOIrWuCrAkZdXnLzJxAOufZ4R8oEAhgXC2dJJyUImn2DQO7AxXCQFjhRAoPI5EiJhHswViZdv9Q4WBN1jgdhG3rptLuLvVVwCLJNPuU0vXN3bs+hXz+dkLbwJpwymfhisTKtgYoiMFEyR9o5/2Iy+MRLr6162ePjFYjnRTU2zll6SNmpra4Es1nNSrv2yLdVcWCySpFVN+WefF50zvH/5OYqIovUY1kUfvdRXEtoLh/l/Gy51hcSoAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=6b1f51f8c390161061f2b92ed4013132^sys_idNOT IN1c24e970c3d0161061f2b92ed4013110,21569011c394961061f2b92ed401310d,25569011c394961061f2b92ed401310c,48c8bd7cc314161061f2b92ed4013196,85c890d1c394961061f2b92ed4013138,88695119c3d8961061f2b92ed4013158,9824e970c3d0161061f2b92ed4013112,9c24e970c3d0161061f2b92ed4013113"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <generation_source/>
+        <order>2➛3</order>
+        <parent_ui_id>1311d560-599b-47aa-a747-8d8ab5dafc19</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:07:27</sys_created_on>
+        <sys_id>1c24e970c3d0161061f2b92ed4013110</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:37:26</sys_updated_on>
+        <ui_id>c593951c-eaac-4c26-8e16-3c44b44a7fa5</ui_id>
+        <values>H4sIAAAAAAAA/+1VUW/aMBD+K1GeM5aQAoW3qRPTpK2dRts9lGI58QWsOXFqO1CG+O87x0mhq9qxatX6MIkHcr777rvvzuerjc+ZP/JhENN+HPd6cRSGMf6SLGLDKBxC2jse9FI/8AuaA3oaqr8TQxMBaFtSUVnjLYni7nA4OCYFrIigJCSiKsk9X8Z1Kej68g9C0gUXTEHhj66uA7+kCikYUP5o88uRWZeAGAkIRD630d6ppRscXN294EeqtVlqG36SwuFLxSyhMPDh1kDBAPNlVGgI/JwWjBqp1v7IqAoNCig7K8T6zmPBC4OAvvW91fwHoh+H1i8DLC0Fd5YuJE/hrDRcFs7iCLlDKaq8OHVsrcqQ0UqYVmW0VBoIg9Jys9ma1NlkIVdf20RjXtRlNIdCplTcfVFjFE8qA9oKn1DEawlYeTAFCMgRnOS0LHkxJ6WSS14DIr+8Mxf40cmEXCERzedFh6a2mA7KQztjtL+vzZdUcQv8GWEweFsrQW4qy8XV1lRBnBDooFPFS/MO4ZbQEN4GzUx3n+x6P9l1OeMgGKmHWe9NtV5IZSzlOgkSnlaIwj58nHioL0f2aPNmDxxOZF4KHFTPetpSl9xw0J6R3gJE6aVCavC+KHgzqZKca21htKFzmNkroOAGeRiHtdmc4NgYYJ5U3kXJ7F8SddJKYePMdjtzE4qT6fxLRNV3qDOqrbB1c+ZKVmUDOm1v49QfTf1PFycT7xxoPvWDqau+tidJAr2ERWmchsNuFPajrJsMu8COwiiOorh212tNODvQf/twD/wX+SVEfubmBNQUi/dcc4KD71ELMLYXyUXrR69Xu0abZO5gt0qjp1dpYzlkl/Z7YfjS69Rt9mdv03+zOfdetd/s0Cx7qveDwa7JK8rN3u6MHt50K9XzRxOD344tt3YsD6DWBn9z3O4zbcYwkVIALXbz1/1r83f02t/y1/VuX/8ELujBiI0KAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <generation_source/>
+        <order>15</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 09:44:32</sys_created_on>
+        <sys_id>21569011c394961061f2b92ed401310d</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:37:26</sys_updated_on>
+        <ui_id>f69af0c9-bc40-468f-9c75-8cb97af4f316</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4bORmbHTdLkNrTIaWuB9WOHphFki06EyZYryUmzIv99lGU3zYp2WdFhOwzIIabIx8cnkrp5IIKTCYFRwoZJMhgkcRQl+EvzmI/jaAzZ4Hg0yEhISlYAelpmvlHLUgloWzFZO+M9jZP+eDw6piWsqWQ0orKu6J4vF6aSbHP9GyHZUkiuoSSTm9uQVEwjBQuaTB5+OrKbChAjBYnIly46OHN0w4Or2wt+oVqXpbHhJy09vtLcEYpCAvcWSg6YL2fSQEgKVnJmld6QidU1GjQwfl7KzaPHUpQWAYnzvTfiO6IfR84vBywtA3+WLZXI4LyyQpXe4gn5QyXrojzzbJ3KkLNa2k5ltNQGKIfKcXPZ2tT5xVKtv3SJpqJsymgPpcqYfPxi1mqR1haMEz5liNcRcPJgCpBQIDgtWFWJckErrVaiAUR+RW8h8aOXS7VGIkYsyh7LXDE9lIf1pmg/bczXTAsH/BlhMHjbKEHvasfF19ZWQb0Q6GAyLSr7EeFW0BLehm1P91+99WG6u+VcgOS0aWbzpKuZcayayhZa1dWsRhD+MOtaeUYmM/Lp6uQiuARWzEg486GNPU1TGKQ8zpIsGvfjaBjn/XTcB34UxUkcJ4272Rgq+IH+27lZKm2dhk3VqKBnhLfHZHAKmTBomz87P1FFJXFwAif7SlgBJsiVDvbjAmPZAuZuCDXcoRK2rffhBBvXAg8w5Kri7i+Ne1mtsXXsdjv3M4Kz4f3zBpW3qM8H/7+q76LqG3cjIGnMFfjbCA+elA5g6kbFR5sXB6hblG0yf7BblvHry7K1HLIth4Mo+tML0+/uN+/Lv7Mbn7xbv9iSef7a3Y9Gu0teM2GfbMf4+Wg7qd7emhj8Yeq4dW15ALUu+Kvnts+0bcNUKQms3PVf/9367+hff63/rZf59geHsLv2bwoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <generation_source/>
+        <order>14</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 09:44:32</sys_created_on>
+        <sys_id>25569011c394961061f2b92ed401310c</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:37:26</sys_updated_on>
+        <ui_id>8ad63aa6-6971-4461-9a37-2b4856167cbf</ui_id>
+        <values>H4sIAAAAAAAA/+1V32/aMBD+V6I8RywhBQpvExNPWyutP/ZQiuXEF7DmxKntQBnif985TgoMtWNVp/VhEg/kfPfdd5/vzncbnzN/5MMgpv047vXiKAxj/CVZxIZROIS0dz7opX7gFzQH9DRUfyeGJgLQtqSissZHEsXd4XBwTgpYEUFJSERVkgNfxnUp6Pr2D0LSBRdMQeGP7u4Dv6QKKRhQ/mjzy5FZl4AYCQhEvrbR3oWlG5xc3UHwM9XaLLUNP0nh8KVillAY+PBooGCA+TIqNAR+TgtGjVRrf2RUhQYFlF0WYv3kseCFQUDf+j5q/gPRz0PrlwGWloI7SxeSp3BZGi4LZ3GE3KEUVV5cOLZWZchoJUyrMloqDYRBabnZbE3q7GohV1/bRBNe1GU0h0KmVDx9UWMUTyoD2gqfUMRrCVh5MAUIyBGc5LQseTEnpZJLXgMiv7wzF/jRyYRcIRHN50WHpraYDspDOxO0f6rNt1RxC/wFYTB4WytBHirLxdXWVEGcEOigU8VL8xHhltAQ3gZNT3dfvPV+srvljINgpG5mvdfVVFtWdWVzJatyWiEI20zbVp76o6n/+WZ85V0Dzad+MHWhtT1JEuglLErjNBx2o7AfZd1k2AV2FkZxFMW1u15rwtmJ/tuZXkhlrIZ11aigY4QUvLEstJWcWvPsyGUs81Lg7HhW+SU3HLSXSeUdhXra0DnM7CgqeEA9TFP1Zozta4B5GHVTMvuXRJ20UthAZruduUnBCXH+okq9dB/4eAP8l/dt5X3ltgSkjuk8dy3BybPTAkzs8Lho/exItauzSeYOduszenl9NpZT9me/F4Z/e4W6bf7qDfpvtuXeS/abvZllL939YLC75BXlZm9fRsczbqV6fWti8IeJ5da25QnU2uBvjtsh06YNEykF0GLXf90367+z9/5+v6+3+v4nmpy5m4EKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 03:37:33</sys_created_on>
+        <sys_id>48c8bd7cc314161061f2b92ed4013196</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:37:26</sys_updated_on>
+        <ui_id>04dfd07a-75ba-4d41-aea4-f35bc762a57c</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4bORmbHTdLkNnTIaWuBfu2wtIJs0Ykw2XIlOWkW5L+PsuymXdAuK/bRw4AcIop8fHyk6C8bIjiZEBglbJgkg0ESR1GCvzSP+TiOxpANjkeDjISkZAWgp2XmK7UslYC2JZO1M97TOOmPx6NjWsKKSkYjKuuKPvHlwlSSra9/ISRbCMk1lGTy5SYkFdNIwYImk80PV3ZdAWKkIBH50kUHp45ueHB1T4KfqdZlaWx4pKXHV5o7QlFI4N5CyQHz5UwaCEnBSs6s0msysbpGgwbGz0q5fvBYiNIiIHG+90Z8Q/TjyPnlgKVl4O+yhRIZnFVWqNJbPCF/qWRdlKeerVMZclZL26mMltoA5VA5bi5bmzq/WKjVeZdoKsqmjPZSqozJhxOzVou0tmCc8ClDvI6AkwdTgIQCwWnBqkqUc1pptRQNIPIrenOJh14u1QqJGDEveyxzxfRQHtabov1DY75mWjjgTwiDwdtGCXpXOy6+trYK6oVAB5NpUdn3CLeElvA2bGe6/2LXh+muy7kAyWkzzObRVLt51HCHRjurMZ5vNifYQws8UDq4qrj7S+NeVmtU0W63t2ahtHVFNrSwRB93UaeFMAbPgTP0h8E5LAWsbvc8T1RRSZzxwCm0FFaACXJM9hxCYCybw60fUxxPj2L2vLXPx4zTuenVXKu6asuadY9zRiYz8vHq5CK4BFbMSDjzYjT2NE1hkPI4S7Jo3I+jYZz303Ef+FEUJ3GcNO5mbajgB/pv99fCf83/guav3KuAOqH8ge9VePAr6wCm7pn5aPPs4+uWbJvMX+wWbfzyom0th2za4SCK/vSy9Xv/1bv23+zVR9+8n2zYPH+p96PRrskrJuyjzRrvP3wn1etHE4PfTR23biwPoNYFf/bcnjJtxzBVSgIrd/PX/23zd/TWv/Rv66t+8x14wcz3qwoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>e05cd300-b56b-4929-a8ab-2578e3bf0e7c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 09:55:08</sys_created_on>
+        <sys_id>85c890d1c394961061f2b92ed4013138</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:37:26</sys_updated_on>
+        <ui_id>59267b2b-7bc4-4bd8-9919-1f02a2bf096a</ui_id>
+        <values>H4sIAAAAAAAA/+1UTW/bMAz9K4bPSWDHTtLkVqAosMNaICt66VqBluhWmyx7spyPBfnvo2QnTdutC4r2MGC+GKREvveoJ91sQinCWZiiiOJpPOZJnCTDKBqepHE2TrJ4KBJAjMNeqKFA2mmQl0ZQvADVuMRmE6UiF9EE+pNRBv1UpHEfENJ+nowyPhkPYTThg7mv226pUsi6UrC+7hpQhj9IJQzqcHZz2wsrMIRl0YSzzbMlu66QKchQUeFZyZsCtQ0+nVGPY3Xsquc7Ic+FOQyKRdedSZekJccnjnohrixqgQSXg6qxFxagBdjSrMOZNQ0lDIK41Gq93/EgtW2VFrCq5U/qn0ZuX44kje+nUEqOl5WVpW4zFjK1WyxVU+iLlqsbIubQKHswxKZGJrBy3BxaSyX/8lAu5zucc6m9jI6WKjmofQTWGpk1Fms3d1To1RdQVVLfs8qUC+mLiUoxuFcUDHJVLgmzlvd6ANzxHtAkYHBO+TOfvgYjnYjP1IaKt140+9E43FZGR5h5zV4w8ydCW2tuZGVPqfECO5rbXufYbPTaSfPp48Ee9Hx07YrFyXA6nZwwjUtyFIuYaipmof7O2qm/8OkxJW8z8pWrDi5ahseqe1L8B7WdlZ/kOieP3s3JJx/t5A76H7Py3wwcDV99qg6O1Hu2PjAv2c6w2oLFr00UJSK5Aw/RRh7mjpQ50XWbuyKTBlyVNYpANBjYMjC4kLik3zf0cl8a/qNg3nhJsCByFoOWXu/oKe4anEtUov7NWHe3pANgiw5g/+a/21WJx5H//j/9b3n6b38BnuUuBa4IAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <generation_source/>
+        <order>8➛9</order>
+        <parent_ui_id>7be683f0-edf6-4a07-80cb-aef75be3eacc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 14:37:26</sys_created_on>
+        <sys_id>88695119c3d8961061f2b92ed4013158</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:37:26</sys_updated_on>
+        <ui_id>fbfac51b-fb13-4673-b5f9-31a83f97de17</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4bORmbHTdLkNrTIaWuB9WOHphFki06EyZYryUmzIv99lGU3zYp2WdFhOwzIIabIx8cnkrp5IIKTCYFRwoZJMhgkcRQl+EvzmI/jaAzZ4Hg0yEhISlYAelpmvlHLUgloWzFZO+M9jZP+eDw6piWsqWQ0orKu6J4vF6aSbHP9GyHZUkiuoSSTm9uQVEwjBQuaTB5+OrKbChAjBYnIly46OHN0w4Or2wt+oVqXpbHhJy09vtLcEYpCAvcWSg6YL2fSQEgKVnJmld6QidU1GjQwfl7KzaPHUpQWAYnzvTfiO6IfR84vBywtA3+WLZXI4LyyQpXe4gn5QyXrojzzbJ3KkLNa2k5ltNQGKIfKcXPZ2tT5xVKtv3SJpqJsymgPpcqYfPxi1mqR1haMEz5liNcRcPJgCpBQIDgtWFWJckErrVaiAUR+RW8h8aOXS7VGIkYsyh7LXDE9lIf1pmg/bczXTAsH/BlhMHjbKEHvasfF19ZWQb0Q6GAyLSr7EeFW0BLehm1P91+99WG6u+VcgOS0aWbzpKuZcayayhZa1dWsRhD+MOtaeUYmM/Lp6uQiuARWzEg486GNPU1TGKQ8zpIsGvfjaBjn/XTcB34UxUkcJ4272Rgq+IH+27lZKm2dhk3VqKBnhLfHZHAKmTBomz87P1FFJXFwAif7SlgBJsiVDvbjAmPZAuZuCDXcoRK2rffhBBvXAg8w5Kri7i+Ne1mtsXXsdjv3M4Kz4f3zBpW3qM8H/7+q76LqG3cjIGnMFfjbCA+elA5g6kbFR5sXB6hblG0yf7BblvHry7K1HLIth4Mo+tML0+/uN+/Lv7Mbn7xbv9iSef7a3Y9Gu0teM2GfbMf4+Wg7qd7emhj8Yeq4dW15ALUu+Kvnts+0bcNUKQms3PVf/9367+hff63/rZf59geHsLv2bwoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <generation_source/>
+        <order>4➛5</order>
+        <parent_ui_id>d6da0f2e-86be-435f-b8bc-ccbbba034f10</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:07:27</sys_created_on>
+        <sys_id>9824e970c3d0161061f2b92ed4013112</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:37:26</sys_updated_on>
+        <ui_id>5b44a3ef-c244-47a9-a015-4e308d3f1dee</ui_id>
+        <values>H4sIAAAAAAAA/+1WTW/bMAz9K4bPWWbHTdLkNqTIaWvX9WOHphVkiU6EypYryUmzIP99lGX3Y0W7rNjQHgbkEFPk4+MjRftiEwoejkMYJnSQJP1+EkdRgr80i/kojkbA+vvDPgs7YUFzQE9LzTWxNJWAtiWVlTPekjjpjUbDfVLAikhKIiKrkjzy5cKUkq7P/yCELYTkGopwfHHZCUuqkYIFHY43vxzZdQmIkYJE5FMXHRw6up2dq3sU/Ey1Lkttw0dSeHyluSMUdUK4tVBwwHwZlQY6YU4LTq3S63BsdYUGDZQfFXJ957EQhUXA0PneGvED0fcj55cBlsbAn7GFEgyOSitU4S2ekD9UssqLQ8/WqQwZraRtVUZLZYBwKB03l61JnZ0s1Opbm2gqirqM5lAqRuXdE7VWi7SyYJzwKUW8loCTB1OAhBzBSU7LUhRzUmq1FDUg8su7c4kP3UyqFRIxYl50KXPFdFEe2p2i/aA2n1MtHPAXhMHgba0EuakcF19bUwXxQqCDYVqU9hPCLaEhvO00M917seuD9L7LmQDJST3M5sFUu3nUcINGO6swnm82E+yhBR4oHZyV3P0lcZdVGlW02+2VWShtXZE1LSzRxx0oVjmBgokqrFYyOMaahF0HkwWw66sn/hOVlxInPTiYHE8CJ9ZSWAEmsCpYgCwDJpWB4KuGDydVmgtjMDQwls7hyk8sTqqH4m1q1qS+aVKzOjU1Tvi6eXOtqrKpc9be1lk4noWfzyYnwSnQfBZ2Zl6d2p6mKfRTHrOERaNeHA3irJeOesD3ojiJ46R2N2tDBN/Rf/t0T/xvwls04ZWbF1Ay7Efgm9fZ+R62AFN3EX20efZ6tmu4SeYP7ldx/PIqbiy77OJBP4r+9Tr2b4ZXb+O32bwP3oq/2cFZ9lLvh8P7Jq+osA92b/x0EzipXj+aGPxx6ri1Y7kDtTb4u+f2mGkzhqlSEmhxP3+9vzZ/e+/9W+B9vfcvfwKpB+fVzQoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <generation_source/>
+        <order>6➛7</order>
+        <parent_ui_id>df0111b0-c25e-4cfc-8f80-5d502d74082a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:07:27</sys_created_on>
+        <sys_id>9c24e970c3d0161061f2b92ed4013113</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:37:26</sys_updated_on>
+        <ui_id>87fb98e9-f38b-4fab-b956-63940dbaf325</ui_id>
+        <values>H4sIAAAAAAAA/+1WbW/aMBD+K1E+ZywhBQrfJiakSVs7rS/7UFrLSS5gzbFT24EyxH/fOU4KfR2rNq2TJvGBnO+ee+7uiS8Xa59l/siHQUz7cdzrxVEYxvhL8igbRuEQ0t7hoJf6gS9oAehpqP5GDE04oG1BeWWNNySKu8Ph4JAIWBJOSUh4VZI7vhnTJaer818ISeeMZwqEP7q4DPySKqRgQPmj9b0jsyoBMRLgiHxqo70jSzfYu7o7wU9Ua7PUNnwkwuFLlVlCYeDDjQGRAebLKdcQ+AUVGTVSrfyRURUaFNDsWPDVrcecCYOAvvW90ew7oh+G1i8HLC0Fd5bOJUvhuDRMCmdxhNyh5FUhjhxb22XIacVN22W0VBpIBqXlZrM1qfOTuVx+aRNNmKjLaA65TCm/faLGKJZUBrRtfEIRryVg24MpgEOB4KSgZcnEjJRKLlgNiPyKzozjQyfncolENJuJDk1tMR1sD+1M0P6+Np9TxSzwJ4TB4E3dCXJdWS6utqYK4hqBDjpVrDTvEG4BDeFN0Gi6++zU+8l2yjkDnpFazHpH1XoulbGU6yRIeFohSnYK6Vww7JD3QeRSFdQeeThs77MCjfScYSwFCsJcPYgfy6LkqGPvcSDr1O0/iuXZvi2YYaA9I7058NJLudRgvd+cVEnBtLb+2tAZXNn3ScE1FmVc5vV6jBo0kHlSeWdlZv+SqJNWClVgNpsrJ3eUufM3twTZvUrLXXZpUynVdoq1EmZKVmWTdNq++lN/NPU/no1PsHJaTP1g6lpd25MkgV6SRWmchsNuFPajvJsMu5AdhFEcRXHtrleasGxP/83DS+f/RP/5ib5wJwBOCJvjOSUEe98QLcDEXhEuWj95cbQLoknmDrZLInp+STSWfbZEvxeGf3pRuJ314j3xd3bCzr7+yXbI8+dmPxhsh7ykzOxshejhtWJb9XJpYvDbieXWynIPam3wV8ftLtNGhomUHKjY6q/72/R38Nq/Ul7XF8nlD7QEer9nCwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=6b1f51f8c390161061f2b92ed4013132"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=6b1f51f8c390161061f2b92ed4013132^sys_idNOT IN1424e970c3d0161061f2b92ed4013112,1824e970c3d0161061f2b92ed4013113,5d691015c394961061f2b92ed40131ff,80695119c3d8961061f2b92ed4013158,8dc890d1c394961061f2b92ed4013137,9024e970c3d0161061f2b92ed401310f,9424e970c3d0161061f2b92ed4013110"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5c24e970c3d0161061f2b92ed4013111</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>f9196d75-9ef7-4737-a734-8b3c19b666d9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:07:27</sys_created_on>
+        <sys_id>1424e970c3d0161061f2b92ed4013112</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:07</sys_updated_on>
+        <ui_id>d6da0f2e-86be-435f-b8bc-ccbbba034f10</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5024e970c3d0161061f2b92ed4013113</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>f9196d75-9ef7-4737-a734-8b3c19b666d9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:07:27</sys_created_on>
+        <sys_id>1824e970c3d0161061f2b92ed4013113</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:07</sys_updated_on>
+        <ui_id>df0111b0-c25e-4cfc-8f80-5d502d74082a</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">55691015c394961061f2b92ed40131ff</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <parent_ui_id>e05cd300-b56b-4929-a8ab-2578e3bf0e7c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 09:57:53</sys_created_on>
+        <sys_id>5d691015c394961061f2b92ed40131ff</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:07</sys_updated_on>
+        <ui_id>bf6a2023-91ee-4a20-9ac6-2005d261295c</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">04695119c3d8961061f2b92ed4013157</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>f9196d75-9ef7-4737-a734-8b3c19b666d9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 14:37:26</sys_created_on>
+        <sys_id>80695119c3d8961061f2b92ed4013158</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:07</sys_updated_on>
+        <ui_id>7be683f0-edf6-4a07-80cb-aef75be3eacc</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">81c890d1c394961061f2b92ed4013137</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 09:55:08</sys_created_on>
+        <sys_id>8dc890d1c394961061f2b92ed4013137</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:07</sys_updated_on>
+        <ui_id>e05cd300-b56b-4929-a8ab-2578e3bf0e7c</ui_id>
+        <values>H4sIAAAAAAAA/+VUy27bMBD8FUNnWdDDshvfghYBCrQN4AS5tIGwIpc2W0pUScqOa/jfu9QjCVIbfSC33sTZ5c7sclaHQLeuaZ291ZfWynUdLD/fh4GsPUbfh6CGCoNlwHTNpZO6LjogDLagWh+QYkIlJkxXONFiYnArcTeRlr6+InPIKZdL2yjY3/3FFbaRihsc9DRgiNWhCZaHFyG3b7BQUKKiyjfOyHpN1yWnk4hBJBcsYVk6z9I4Tt/MknKelUnKM0DIKG+8+HZsb/KhQ8KzfXs+wu3IpA33spI4DPDBYc1J/lKAshgGFdQcnDb7R8Qg8OtaPQEbWTsqF/jkByt/UO00z32iQOqRYR9kGy0ZXjdeSY84KNUY1Kqt6k+9YD9uFNAqN46bkNZiwbHx6jzdwC1uNnq3GomuZN11MgSVZqAeT+Co37J1aP0LoMKKChUVNA1NoWiM3sruMmmporWiQySU3hGpN1UEzAuPaBgQXRH+roPvwEjfxUcqQ5d7mSVYyYrOgFTOGWrh2I2j+N56QX2DQytFPw1KsMzIxl0SzxYH1cfwV/c+M+7hEM+44PECpou8hOmMz5Ip2WI2FVlessU8hXzBohUyeuKIDOv9WmhR9H49Hr+0cZzx1Vmbvz7BayzFBeQiT+L89FLM5qeW4sQ6nN+E9Deb4J/0DxchjuP/dBOkLXpHD7115P+8CPfe9T2D7Q3CkUlLQm499n782/vAnl5asufQTptvvoUn7PgTQcy37TcGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d424e970c3d0161061f2b92ed401310e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following in Parallel">5d31e5dedfe50300b61ecae83df26326</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:07:27</sys_created_on>
+        <sys_id>9024e970c3d0161061f2b92ed401310f</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:07</sys_updated_on>
+        <ui_id>f9196d75-9ef7-4737-a734-8b3c19b666d9</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dc24e970c3d0161061f2b92ed401310f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>f9196d75-9ef7-4737-a734-8b3c19b666d9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:07:27</sys_created_on>
+        <sys_id>9424e970c3d0161061f2b92ed4013110</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:07</sys_updated_on>
+        <ui_id>1311d560-599b-47aa-a747-8d8ab5dafc19</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6b1f51f8c390161061f2b92ed4013132"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6b1f51f8c390161061f2b92ed4013132"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_6b1f51f8c390161061f2b92ed4013132^sys_idNOT IN1024a970c3d0161061f2b92ed40131ee,5824a970c3d0161061f2b92ed40131ea,9024a970c3d0161061f2b92ed40131f1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6b1f51f8c390161061f2b92ed4013132</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:07:26</sys_created_on>
+        <sys_id>1024a970c3d0161061f2b92ed40131ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 02:07:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6b1f51f8c390161061f2b92ed4013132</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:07:26</sys_created_on>
+        <sys_id>5824a970c3d0161061f2b92ed40131ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 02:07:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6b1f51f8c390161061f2b92ed4013132</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:07:26</sys_created_on>
+        <sys_id>9024a970c3d0161061f2b92ed40131f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 02:07:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6b1f51f8c390161061f2b92ed4013132"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_6b1f51f8c390161061f2b92ed4013132"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6b1f51f8c390161061f2b92ed4013132"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>lup_request_processing</internal_name>
+        <label_cache>[{"name":"04dfd07a-75ba-4d41-aea4-f35bc762a57c.Record","label":"10 - Create Task➛x_1329978_new_la_0_lup_task_table Record","reference":"x_1329978_new_la_0_lup_task_table","reference_display":"LUP TASK  TABLE","type":"reference","base_type":"reference","usedInstances":{"59267b2b-7bc4-4bd8-9919-1f02a2bf096a":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"04dfd07a-75ba-4d41-aea4-f35bc762a57c.Record.outcome_of_review","label":"10 - Create Task➛x_1329978_new_la_0_lup_task_table Record➛Outcome of Review","reference":"","reference_display":"Outcome of Review","type":"choice","base_type":"choice","parent_table_name":"x_1329978_new_la_0_lup_task_table","column_name":"outcome_of_review","choices":[{"label":"-- None --","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"reference":false,"label":"Rejected","image":"","selected":false,"missing":false,"rawLabel":"Rejected","value":"Rejected","parameters":{"name":"x_1329978_new_la_0_lup_task_table","dependent_values":[""]}},{"used":false,"reference":false,"label":"Validated","image":"","selected":false,"missing":false,"rawLabel":"Validated","value":"Validated","parameters":{"name":"x_1329978_new_la_0_lup_task_table","dependent_values":[""]}},{"used":false,"reference":false,"label":"Returned to Applicant","image":"","selected":false,"missing":false,"rawLabel":"Returned to Applicant","value":"Returned to Applicant","parameters":{"name":"x_1329978_new_la_0_lup_task_table","dependent_values":[""]}}],"usedInstances":{"e05cd300-b56b-4929-a8ab-2578e3bf0e7c":["condition"]}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛LUP Request Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1329978_new_la_0_lup_request","column_name":"sys_id","usedInstances":{"57470def-071e-419e-84db-e591b1d8176c":["request_number"]}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛LUP Request Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1329978_new_la_0_lup_request","column_name":"number","usedInstances":{"5b44a3ef-c244-47a9-a015-4e308d3f1dee":["lup_request"],"57470def-071e-419e-84db-e591b1d8176c":["request_number"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛LUP Request Record","reference":"x_1329978_new_la_0_lup_request","reference_display":"LUP Request","type":"reference","base_type":"reference","usedInstances":{"c593951c-eaac-4c26-8e16-3c44b44a7fa5":["lup_request"],"87fb98e9-f38b-4fab-b956-63940dbaf325":["lup_request"],"5b44a3ef-c244-47a9-a015-4e308d3f1dee":["lup_request"],"04dfd07a-75ba-4d41-aea4-f35bc762a57c":["lup_request"],"69ae5196-9296-4ea1-92a1-8e3608bbefa6":["record"],"57470def-071e-419e-84db-e591b1d8176c":["request_number","record"],"8ad63aa6-6971-4461-9a37-2b4856167cbf":["lup_request"],"f69af0c9-bc40-468f-9c75-8cb97af4f316":["field_values"],"fbfac51b-fb13-4673-b5f9-31a83f97de17":["field_values"]},"attributes":{}},{"name":"04dfd07a-75ba-4d41-aea4-f35bc762a57c.Record.outcome_of_rp_review_select_not_applicable_if_rp_review_is_overdue","label":"10 - Create Task➛x_1329978_new_la_0_lup_task_table Record➛Outcome of RP Review (Select \u0027Not applicable\u0027 if RP Review is overdue)","reference":"","reference_display":"Outcome of RP Review (Select \u0027Not applicable\u0027 if RP Review is overdue)","type":"choice","base_type":"choice","parent_table_name":"x_1329978_new_la_0_lup_task_table","column_name":"outcome_of_rp_review_select_not_applicable_if_rp_review_is_overdue","choices":[{"label":"-- None --","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"reference":false,"label":"Validated","image":"","selected":false,"missing":false,"rawLabel":"Validated","value":"Validated","parameters":{"name":"x_1329978_new_la_0_lup_task_table","dependent_values":[""]}},{"used":false,"reference":false,"label":"Rejected/Returned to Applicant","image":"","selected":false,"missing":false,"rawLabel":"Rejected/Returned to Applicant","value":"Rejected/Returned to Applicant","parameters":{"name":"x_1329978_new_la_0_lup_task_table","dependent_values":[""]}},{"used":false,"reference":false,"label":"Not applicable","image":"","selected":false,"missing":false,"rawLabel":"Not applicable","value":"Not applicable","parameters":{"name":"x_1329978_new_la_0_lup_task_table","dependent_values":[""]}}],"usedInstances":{}},{"name":"Created or Updated_1.current.request_number","label":"Trigger - Record Created or Updated➛LUP Request Record➛request number","reference":"x_1329978_new_la_0_lup_request","reference_display":"LUP Request","type":"reference","base_type":"reference","parent_table_name":"x_1329978_new_la_0_lup_request","column_name":"request_number","usedInstances":{}},{"name":"Created or Updated_1.current.request_number.sys_id","label":"Trigger - Record Created or Updated➛LUP Request Record➛request number➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1329978_new_la_0_lup_request","column_name":"sys_id","usedInstances":{"57470def-071e-419e-84db-e591b1d8176c":["request_number"]}},{"name":"Created or Updated_1.current.task_effective_number","label":"Trigger - Record Created or Updated➛LUP Request Record➛Effective number","reference":"","reference_display":"Effective number","type":"string","base_type":"string","parent_table_name":"x_1329978_new_la_0_lup_request","column_name":"task_effective_number","usedInstances":{"57470def-071e-419e-84db-e591b1d8176c":["request_number"]}},{"name":"Created or Updated_1.current.parent","label":"Trigger - Record Created or Updated➛LUP Request Record➛Parent","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","parent_table_name":"x_1329978_new_la_0_lup_request","column_name":"parent","usedInstances":{"57470def-071e-419e-84db-e591b1d8176c":["request_number"]}}]</label_cache>
+        <master>true</master>
+        <name>LUP Request Processing</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="LUP Request Processing">6b1f51f8c390161061f2b92ed4013132</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>49e08678c354161061f2b92ed4013139</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=49e08678c354161061f2b92ed4013139"/>
+    <sys_variable_value action="delete_multiple" query="document_key=49e08678c354161061f2b92ed4013139"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=49e08678c354161061f2b92ed4013139"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=49e08678c354161061f2b92ed4013139^sys_idNOT IN09e08678c354161061f2b92ed401313a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>49e08678c354161061f2b92ed4013139</id>
+        <name>LUP Request Processing</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>09e08678c354161061f2b92ed401313a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 04:13:07</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=09e08678c354161061f2b92ed401313a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=49e08678c354161061f2b92ed4013139^sys_idNOT IN0de08678c354161061f2b92ed401313b,19e08678c354161061f2b92ed4013163,d9e08678c354161061f2b92ed401316a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</model>
+        <model_id>49e08678c354161061f2b92ed4013139</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_49e08678c354161061f2b92ed4013139</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>0de08678c354161061f2b92ed401313b</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0de08678c354161061f2b92ed401313b"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">961fcb9fd1e302104f34ba60d8b7c162</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</model>
+        <model_id>49e08678c354161061f2b92ed4013139</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_49e08678c354161061f2b92ed4013139</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>19e08678c354161061f2b92ed4013163</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 04:50:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=19e08678c354161061f2b92ed4013163"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</model>
+        <model_id>49e08678c354161061f2b92ed4013139</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_49e08678c354161061f2b92ed4013139</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>d9e08678c354161061f2b92ed401316a</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d9e08678c354161061f2b92ed401316a"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=49e08678c354161061f2b92ed4013139"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=49e08678c354161061f2b92ed4013139"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=49e08678c354161061f2b92ed4013139^sys_idNOT IN91e08678c354161061f2b92ed4013187"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>91e08678c354161061f2b92ed4013187</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 04:13:07</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+Va21LjRhD9FZWekiqS0sW2MHkiXLJUscvGeDcPFJkajVq2KvLISCOBd4t/T49ulmXJ+AKJzfIA9sxouk9P9+kjibvvqk9t8NUTdUhtH9Qj1eMCQk794WwKOCzkMOF0IucmlDtUBOFMPRFhDEdqEDoQqif6kZpQP4bbWXTl4EW4NL0iv1zNp/H7E9FNo9+3jgmHR+JTohE/npIQHmKIBC50vGjq09nXfP31l8/KoJyc0hC3FdLkd5WNPd8Jgasnd/fotrTLXB30/rHGTAN/NM047uh2z7R1wzEpUA23qMOt+SkaUM9BwpMA7gCacqkfQUNAQqDODfdn5YoxxjOLyIQ+Rd433P1Yk+tcQN8ZZHNsHHgMbqbCC3g2kjmUTQZ+POGfMkdliMClsS+KEOFIHAFxYCp9k9Zy0+7tOHgcFIYuPZ7CyCf9gFG//EaFCD07FhDJyLqejzEmWRCiIA5TNwcXZzeDc/LX6fDsw8WADC5uh4Ors+HFufqc4iEPsdwx8zD3hWRwnstzvfTAlyfF44mN3hypEQu9qThlwksgd+f5aJ6VYcxxD1IGfik/s8iVIbz2MFFO7hBDEZ50S5x3r/MtBzFXAjwi/KWwOMTgCKU4fvdqQkd5UN3PRbalQckTJaEhIRMSzSIyjm2CYRuNMFYen8aC0E7X6eut+WcthCYtCdz6TlXvn+VpgQ9MVJLL/RJVv330osjjo0qQSowy95YhlugwSZUighnU6LCw3i9UWr6oKEtNa2Wf5exJallRo5s1OEZnHUMz7Z5mSdQ6fnR1zdK61HVMTbOPKxyzbL7VL1HL5iq4VayTj6xDO5022onSgvHXKI969AovqxW7Vu4li4mb72PIg87Z7WwPXauxtLkRTZcZlw2fLybeKmivzO7USShe4RQY12HvNVja9YNHpIYtGNqm7J9RGMTcqXOY3FPxuDJfofyUx+/nw2KwKlu7QQir8S6uOByUu/D0PH+KCqR8thVDG6YOVq/T05CYTcnJ3X7fZtRwXatnga7XGHpuuNGb/WLmFyoiaSqpNipszLakKUk34Of/38GdWDrPuUaOzub2n43PAu54KfplLi6mInXLUmWVzYuj+Pviz+VCzQZfqlVLsxynlZ2YXanVKqwGZ0QDwjepVe2tb9+yO8mtM2oSOOCfz7dTF/qBDEsRChJMIZQhwOvUr6fXZx9OP/1xcftb/vdycPOx+Dy8weseKRcREQGhjkMqgV4zdbOYrKcmHsfASQRCyO6yuaTgqK7Ta2hmpNJn5QErKbsEofIp4L9czdcpt4D9LE2nA+q6VW2xDmjcLFTeFWo7EOMlLYVIf8fxBaRS8rec+Q90S1wrrmQxipsLLmoYtK+bFrMQMwoutwM21TtGl/atnmn1aoKrZr7dsf2RXmuSRtJKP00SZ92iTBpru5Q8ddG0Rd7XMiDf2nxB7v24QdlJYhZl1vocYBtn91+VlvWNrobE99IH+rW+PvI9B4q53eitaiWZU9nm5MbsvtPtWi3kBm4TuVWNr3JMNMD+TzSr7F/SkVfXrnufeLtoSmkTSOBWpcZ5oOCEgkYUz1VyPQCOYs8UMQasZR9vYtGgIq0fmMaoSqxl5CVTv2vc2U3/krLEYSUvoAMCtrNorJXQrk/qwDFZ32kTjh2rlVvb1WNten8k5MZEkTTxzkrJtNm+9T0bRVMlzxcPe02N+I5Rv9lzxgYv9r/LSqeH2TFs0VsDzmrPK9gBv46PufcQA2FjykfZq/YC1yUeK1A2VrIlSrbkcJFS/5HOIrWuCrAkZdXnLzJxAOufZ4R8oEAhgXC2dJJyUImn2DQO7AxXCQFjhRAoPI5EiJhHswViZdv9Q4WBN1jgdhG3rptLuLvVVwCLJNPuU0vXN3bs+hXz+dkLbwJpwymfhisTKtgYoiMFEyR9o5/2Iy+MRLr6162ePjFYjnRTU2zll6SNmpra4Es1nNSrv2yLdVcWCySpFVN+WefF50zvH/5OYqIovUY1kUfvdRXEtoLh/l/Gy51hcSoAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=49e08678c354161061f2b92ed4013139^sys_idNOT IN10d814d1c394961061f2b92ed4013123,18d814d1c394961061f2b92ed4013123,50d814d1c394961061f2b92ed4013122,59e08678c354161061f2b92ed4013184,800a1159c3d8961061f2b92ed4013198,d1e08678c354161061f2b92ed4013186,d9e08678c354161061f2b92ed4013185,d9e08678c354161061f2b92ed4013186"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <generation_source/>
+        <order>14</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 09:55:22</sys_created_on>
+        <sys_id>10d814d1c394961061f2b92ed4013123</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>8ad63aa6-6971-4461-9a37-2b4856167cbf</ui_id>
+        <values>H4sIAAAAAAAA/+1WXW/aMBT9K5GfEUtIgcLbRMVT10rrxx5KsZz4Bqw5ceo4UIb477uOE6Cl6+jWh06axAO+Xz7n+t4Dd2siOBkS6IesF4bdbhj4foifKAn4IPAHEHdP+92YtEjGUsBIw4rv1LBIAtoWTJbW+EiDsDMY9E9pBksqGfWpLHP6JJaLIpdsdfuGlHguJNeQkeHdfYvkTCMEA5oM189cx3KQLAKJodf1BS9xMqvc2fBIqwBnO9/P9S6cQ2lu8fgtAo8GMg4IJGGygBZJWcaZUXpFhkaXaNDA+GUmV9uIucgMFiQ29rEQP/DaU9/GJYDMYnC+7bG6+Mx10bmSM2bYFVaPTanr8HiuRAyF6wuHhJXSjPZtLuAyN0JlLsUxd9lKlml24dpCtgWaR0NLWQDlkFuuFn1NJbmaq+XXBulYZFVbaqdUMZPbEzNGi6g0Fs+aRAzrNQDsO+AVICHF4jRleS6yGc21WoiqIOJL2zOJh3Yi1RKBFGKWtVlsybSx3aw9RvtZZb5lWtjCX7AMJm9apFgVI8mKYscPm0sfSovOsa15UdcamxJrkZvPeMECagqbVr00nVcHrhftBiwRIDmttqXYWxuEgjgrrjOtynxSYhG+njS7MiHDCTm/GV1518DSCWlNXGplj6IIuhEP4jD2B53A7wVJJxp0gJ/4QRgEYRWOjKngR8ZvpsVcaWO7WrHGnjpECMEbqaywj8CseXoQMlJpLnE5PfsWC2EEFF6itHeQ6hWGzWBqd13DA/bD1KzXI1wQA9zDrJuc2680aMelxpEym83ULSkuoouXZezF+4UPJeZ/e9+3vW+T4yO2o5HjsV0P77ZZj5eXptFlwE4geud4rs2109Xa6XPwuj7XlmMEutf1/X9No93Pzx9L9EeR471f6d8Ic5K8Nnr9/m7GlkyYPUEODkXENu/Ns38EgGb2vzkET/HUsx4pJYFlz4ccEX0aW8K7Ae+824Cf/GvT/bf/QD7KeP9qqO9/AkAJsv2kCwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <generation_source/>
+        <order>15</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 09:55:22</sys_created_on>
+        <sys_id>18d814d1c394961061f2b92ed4013123</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>f69af0c9-bc40-468f-9c75-8cb97af4f316</ui_id>
+        <values>H4sIAAAAAAAA/+1WS28aMRD+KyufEd1lAwRuFYhTmkjNo4cQLO96Fqx6H7G9EIr47x2vd4E8mpI2h1SqxAHPy983nvngdkMEJ0MC/ZD1wrDbDQPfD/ETJQEfBP4A4u5pvxuTFslYChhpmP5ODYskoG3JZGmNDzQIO4NB/5RmsKKSUZ/KsqCPYrnQhWTrmzekxAshuYKMDG/vWqRgCiEYUGS4eeI6loNkEUgMvaoveImTWRfOhkdaBTjb2WGud+4cueIWj98i8GAg44BAEiY1tEjKMs5MrtZkaFSJBgWMX2RyvYtYiMxgQWJjH7T4gdee+jYuAWQWg/PtjtXFY9dF50rGzLBLrB6bUtXh8SIXMWjXFw4JK6UZHdpcwEVhRJ65FMfcZeeyTLNz1xayK9A8GlpKDZRDYbla9DWV5HKRr742SCciq9pSO2UeM7k7MWOUiEpj8WxIxLBeA8C+A14BElIsTlNWFCKb00LlS1EVRHxpey7x0E5kvkIgWsyzNostmTa2m7UnaB9X5humhC38Bctg8rZF9FqPJNN6zw+bS+9Li86xrXlR1xqbEitRmM94wRJqCttWvTSdVweuF+0HLBEgOa22RR+sDUJBnBXXucrLYlpiEb6ZNrsyJcMpObseXXpXwNIpaU1damWPogi6EQ/iMPYHncDvBUknGnSAn/hBGARhFY6MqeBHxm9nepErY7tascaeOkT4nkx6Y4iFRtvsmX+Up4XEzfTsQyyFEaC9JFfe4zxPGzaHmd1yBffYCVPz3YxwNQxwD1OuC26/0qAdlwqHyWy3M7eeuIIuPqmq8rrqc2X539V36erbxPeIXWjEd2KXwbtpluHlFWlUGLAHCN05nipx7XS19mocvK7GteUYOe51ff9fU2T3Y/PHgvxRxPfgN/k3Mpwkr41ev7+fsRUT5kB+g+faYZv35tk/AkAz+98cgsd46lmP8lwCy54OOSL6NLGE9wPeebcBP/nXpvtv/298lPH+1VDf/QR54RlYkgsAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>e05cd300-b56b-4929-a8ab-2578e3bf0e7c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 09:55:22</sys_created_on>
+        <sys_id>50d814d1c394961061f2b92ed4013122</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>59267b2b-7bc4-4bd8-9919-1f02a2bf096a</ui_id>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5HPbZU0aUt7W1EhrcSCBIgLC9bEnoB3nY+1nZZu1f++duyWChBbJPaAtpdqZjwz7734JTdrIjiZkQx5nEyTMUuTNB3G8fAoS/JxmidDngJiQnqkghLtSYWsVtzGC5CtS6zXccYLHk+gPxnl0M94lvQBIesX6Shnk/EQRhM2uOj6NhvbyYVuJKyuwwCbYQ9CcoUVmd3c9kgDyu4yqMhs/ax0KFgJOUp79GKL9jl6s2pczGvWllgZKrbJ09A5D5Xo69xWbJODk8Q9go8GK44WSAFSY4+UUHEwtVqRmVGtTSgEfl7J1e7Eg6iMJ1rCoxa/7eYsducKtMxYEGEXXkEuce5F8qViDgYu7XRmWrXTrBYMtdeFYwGtNMf7OX/gvDGirnyLcYNDdy3bsjrzqpDdgL1n0mqkHBvH1aH31IrLh3p5sQV6IqpOlkBT1gzkLgJjlMhb4+CsCUrsdC6haUR1TxtVL0TXbKGUg3tpg0Eh66XdqcV9NQDmcA+ssjA4sfl5l74GJRyJb3aMbd70iF7pYwlaP1GxOtJfrUPiiQUKtFOhk4B2t8E1MyUa88WuWmAAvukFS+Sjt24Zmz5dqr2ZT7Z4pEk6nE4nR7TCJZVAYyrbhhrQP6l/Di+McEjL+5xyAIetU67Cgtc4BbO8yJ3u90ZnvhCsMvowqxx9NqsEKp/eK39zSDx88z28d5s6U+g9d9h7rag2YPB7G8cpT++gW+Gjbs2d5epk0D53ZV0QMVlr5BFvMTJ1pHAhcGn/fmAnwEtH/as173PhATptXXgiUHL9inBbC2Jp+RmkXshnNgzF6DoUd1+tD/NiMo673ydz5H/z8br9A/MooWXRCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <generation_source/>
+        <order>2➛3</order>
+        <parent_ui_id>1311d560-599b-47aa-a747-8d8ab5dafc19</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>59e08678c354161061f2b92ed4013184</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>c593951c-eaac-4c26-8e16-3c44b44a7fa5</ui_id>
+        <values>H4sIAAAAAAAA/+1WXW/aMBT9K5GfGUtIgcLbRMU0qWunsXYPpUROfAPWnDi1HShD/Pddx+GjH+voPqRWmsQDvr4+Puf63gNXK8IZ6RPohrQThu12GPh+iJ84DVgv8HuQtI+77YQ0SE4zwExD9bfI0FgAxuZUlDZ4GwVhq9frHkc5LCJBIz8SZRHdyWVcF4IuL59xJJlxwRTkpH913SAFVUjBgCL91b2tQzUIGoPA1C/1BY9pMsvCxXAZVQkudrp/1jtzG1Ixy8dvELg1kDNAIikVGhokozmjRqol6RtVYkABZee5WG4zZjw3CEhs7q3m3/HaY9/mpYDKEnB722V18YmrottKT6ihI0RPTKnq9GQmeQLa1YVBSkthBvsxl3BeGC5zd8Qpd6elKLP8zJWFbAE2j4aRUkPEoLBaLftaSjqaycXnDdMhz6uy1JtCJlRsV9QYxePSWD4rElPE2xCw74BXgIAMwaOMFgXPp1Gh5JxXgMgva04FLpqpkAskovk0b9LEimliuWlziPGTKnxJFbfAHxEGD68bRC/1QFCtd/qwuNFNadk5tbWuyJXGHkkUL8w7vGAOtYR1ox6a1pMN14l3DZZyECyqpkXvjY2eSWWsiOoSlDAuEYW9/zDysOIc9WDMmzxIGMisEDgJns204ufccNCekd4MROElQmrwPil4MyrjjGttYbShU5jYGVNwgzyMw1qtBtiYBpgnlXdRMPs1CppJqfApzXo9ccOBA+DyC0TVW9QJVhNLXT3XVMmyqEHHm3Efk/6YnF4MRt4XoNmYNMZOfRWP4xjaMQuSMPF7rcDvBGkr7rWAHflBGARhlY6PFnF2YP76odH8L/K/KPLzrPmASdlY89COine5GZXHB2jj0YBPhLV0G/d9ut50WDuvDp726jpyiFl32r7/2vza/RT9tl2/FGve+8X+hUmn6VOt1+3uemxBudkz5+ChldjiPbv3DyCw6f2vjsFdPnWvx1IKoPn9JkdGb4dW8K7BW3+twY9eW3f/6b+Rl9LeP2vq6x/KO4YZsAsAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <generation_source/>
+        <order>8➛9</order>
+        <parent_ui_id>7be683f0-edf6-4a07-80cb-aef75be3eacc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 14:40:09</sys_created_on>
+        <sys_id>800a1159c3d8961061f2b92ed4013198</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>fbfac51b-fb13-4673-b5f9-31a83f97de17</ui_id>
+        <values>H4sIAAAAAAAA/+1WS28aMRD+KyufEd1lAwRuFYhTmkjNo4cQLO96Fqx6H7G9EIr47x2vd4E8mpI2h1SqxAHPy983nvngdkMEJ0MC/ZD1wrDbDQPfD/ETJQEfBP4A4u5pvxuTFslYChhpmP5ODYskoG3JZGmNDzQIO4NB/5RmsKKSUZ/KsqCPYrnQhWTrmzekxAshuYKMDG/vWqRgCiEYUGS4eeI6loNkEUgMvaoveImTWRfOhkdaBTjb2WGud+4cueIWj98i8GAg44BAEiY1tEjKMs5MrtZkaFSJBgWMX2RyvYtYiMxgQWJjH7T4gdee+jYuAWQWg/PtjtXFY9dF50rGzLBLrB6bUtXh8SIXMWjXFw4JK6UZHdpcwEVhRJ65FMfcZeeyTLNz1xayK9A8GlpKDZRDYbla9DWV5HKRr742SCciq9pSO2UeM7k7MWOUiEpj8WxIxLBeA8C+A14BElIsTlNWFCKb00LlS1EVRHxpey7x0E5kvkIgWsyzNostmTa2m7UnaB9X5humhC38Bctg8rZF9FqPJNN6zw+bS+9Li86xrXlR1xqbEitRmM94wRJqCttWvTSdVweuF+0HLBEgOa22RR+sDUJBnBXXucrLYlpiEb6ZNrsyJcMpObseXXpXwNIpaU1damWPogi6EQ/iMPYHncDvBUknGnSAn/hBGARhFY6MqeBHxm9nepErY7tascaeOkT4nkx6Y4iFRtvsmX+Up4XEzfTsQyyFEaC9JFfe4zxPGzaHmd1yBffYCVPz3YxwNQxwD1OuC26/0qAdlwqHyWy3M7eeuIIuPqmq8rrqc2X539V36erbxPeIXWjEd2KXwbtpluHlFWlUGLAHCN05nipx7XS19mocvK7GteUYOe51ff9fU2T3Y/PHgvxRxPfgN/k3Mpwkr41ev7+fsRUT5kB+g+faYZv35tk/AkAz+98cgsd46lmP8lwCy54OOSL6NLGE9wPeebcBP/nXpvtv/298lPH+1VDf/QR54RlYkgsAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <generation_source/>
+        <order>6➛7</order>
+        <parent_ui_id>df0111b0-c25e-4cfc-8f80-5d502d74082a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>d1e08678c354161061f2b92ed4013186</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>87fb98e9-f38b-4fab-b956-63940dbaf325</ui_id>
+        <values>H4sIAAAAAAAA/+1W32/aMBD+VyI/M5aQAoW3iQppUtdOo+seShs58QWsOXFqO1CG+N93jsOPUtbRbQ+tNIkHfHe++77zZ19uloQz0ifQDWknDNvtMPD9EH9xGrBe4PcgaZ922wlpkJxmgJGG6u+RobEAtM2oKK3xIQrCVq/XPY1ymEeCRn4kyiJ6FMu4LgRdXL9gSzLlginISf/mtkEKqhCCAUX6yz3XsRwEjUFg6FVd4BAnsyicDZdRFeBs57t7vQvnkIpZPH6DwIOBnAECSanQ0CAZzRk1Ui1I36gSDQoou8zFYhMx5bnBhMTGPmj+A8ue+jYuBWSWgPNtllXhM9dF50rPqKEjzJ6YUtXhyVTyBLTrC4OUlsIMdm0u4LIwXOZui2PudktRZvmFawvZJFgfGlpKDRGDwnK16Gsq6Wgq51/WSIc8r9pSO4VMqNisqDGKx6WxeJYkpphvDcCeA5YAARkmjzJaFDyfRIWSM14lRHxZcyJw0UyFnCMQzSd5kyaWTBPbTZtDtJ9V5muquE38CdPg5lWD6IUeCKr1lh82N7ovLTrHtuYVudbYLYnihfmABWZQU1g16kvTelZwnXgrsJSDYFF1W/TOtdFTqYwlURVBCuMSs7ArSKY5x555H/NUqoxal4dy8j4r0AjPGQYyR8mZuyf7BzIrBF4U73AiG9TqHMzl2U7OuOGgPSO9KYjCS4TUYKPfjco441rbeG3oBO7shVVwj6SMq7xcDlDlBpgnlfe1YPZvFDSTUqEuzGp1524a3iYXbzYA+R7TYhddUjPFo8NzrbQxUbIs6qLj9dsyJv0xOf86GCFzmo1JY+xaXdnjOIZ2zIIkTPxeK/A7QdqKey1gJ34QBkFYhaNCIs6OjF89fdX+n+ibP9GXDZ0j3oD10BnaR8C7Xj8Ch5+G9fQBPHDstXPsT6Da6XJtp1Dw/BSqLceMoU7b99/aJHJD9o8H0WsZOjvfIr8ZP2n6nPS63a3G5pSbnbETPH23bPNerP0jAKy1/80heIyn1nospQCa74scEb0fWsJbgbf+mcBP3pq6//Y767XI+1eivv0J8p9CZooMAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <generation_source/>
+        <order>4➛5</order>
+        <parent_ui_id>d6da0f2e-86be-435f-b8bc-ccbbba034f10</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>d9e08678c354161061f2b92ed4013185</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>5b44a3ef-c244-47a9-a015-4e308d3f1dee</ui_id>
+        <values>H4sIAAAAAAAA/+1W3W/TMBD/VyI/l5I0dF37hlLtCRhjMB4oixz70lo4cWY720rV/51znLTdB6MDJDYJqQ/1ff/ufnftlxURnEwIjGJ6EMfDYRyFYYyfLI/4OArHwIaHoyEjPVLSAtDSUvMttTSTgLJLKmsnvE6jeDAejw7TEq5SSdMwlXWV3rDlwlSSLs8e4cIWQnINJZl8+dojFdVYggVNJqtbqn0xSJqBRNOPbYL7MNll5WX4TBsDL3uz6xu88wqluasn7BG4tlBywEJyKg30SEFLTq3SSzKxukaBBsqPS7ncWCxEaTEgcbbXRnzHtIehs8sBkTHwus2zSTz1XfSqfEotPcXozNa6NWcLJRgY3xcOOa2lTXZl3uC4skKV3sUj995K1kX5zreFbAJ0Q0NJbSDlUDmsrvoWSn66UFcfukqPRNm0pVVKxajcvKi1WmS1dfWsSEYxXleAmwOmAAkFBk8LWlWinKeVVpeiCYj1Ff25xEc/l+oKCzFiXvYpc2D62G7aP0L5tBGfUS1c4LcYBp3XPWKWJpHUmC0+bG56UbvqPNoWV+pb41yYFpV9jQkuoYWw7rVLM3iQcAfZlmC5AMnTZlvMzto4wmu4QKGd1ejPV6sEWWKBB0oHnyruvqZRn9Ua+2rX63OzUNo62E1ZCNr7TRWrXcuCRJVWKxmcICZhl0GyAPbt/I59oopK4ioF0+QkCVz7LoUVYAKrggXIKmBSGQjea3hxWmeFMAZdA2PpHM79suBC+FC8S83a1Bdtatakxm7jKJpxzrWqqxbnrDsHMzKZkTefktPgI9BiRnoz351GnmUZDDMesZiF40EUHkT5IBsPgL8KoziK4sYch5oKvqf9+u4h+j+EfzGEx532PTatO+1HbtWCs27V7l/A7sYDTgDH6xW373yr9LG2tz56+Na3kn2O/cEwDJ/bvfc/Zb997p/Kad/5xf/Fkc/zh6g3Gm05dkWF3Tnu0d1T45r3aO7vUUDH/c++gpv1tFzPlJJAy9skx4peHjnAW4IP/hrBXz03dv/pv5mnQu+fkfrrDyxK1KPwCwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>d9e08678c354161061f2b92ed4013186</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>04dfd07a-75ba-4d41-aea4-f35bc762a57c</ui_id>
+        <values>H4sIAAAAAAAA/+1WW2/aMBT+K5GfEUtIgcLbRMVT10q97WG0lhOfgDXnUtuBMsR/33GcAC1tR7dpaqVJPODjc/s+f+fAtxURnAwJ9EPWC8NuNwx8P8RPlAR8EPgDiLvH/W5MWiRjKaCnYfo7NSySgLY5k6U1PtAg7AwG/WOawYJKRn0qy4I+8uVCF5Itb94QEs+E5AoyMvx22yIFU9iCAUWGqydXh2KQLAKJrld1gecwmWXhbHiklYOzne7GemfuIlfc9uO3CDwYyDhgIwmTGlokZRlnJldLMjSqRIMCxs8zudx4zERmMCGxvg9a/MCyx771SwCRxeDuNseq8Ilj0V0lJ8ywS8wem1LV7vEsFzFoxwuHhJXSjHZtzuG8MCLPXIhD7qJzWabZmaOFbBI0j4aWUgPlUFistvsaSnI5yxcXTadjkVW01Jcyj5ncnJgxSkSlsf2sSMQwX9OAfQcsARJSTE5TVhQim9JC5XNRJcT+0vZU4qGdyHyBjWgxzdostmDaSDdrj9F+UplvmBI28RdMg8HrFtFLPZJM6y0+JJfel7Y7h7bGRR01NiRWojCfscAcagjrVj00nVcF14u2AksESE6radE7Y2MFr+AejWZSYjxfrUaoEgPcy5V3XXD7lQbtuFTIq1mv7/QsV8bCrtpC0C7usoxSoTWePWvo9LwLmAtY3O15jvK0kDhEnuVsLowA7SVY7KUMnjZsCnduQnAKXBa9561cPSQXma9eb6rysqhhTZrpn5DhhJxejy69K2DphLQmjozKHkURdCMexGHsDzqB3wuSTjToAD/ygzAIwsod35AKfqD/en/v/Of8H3D+tsV9wBw1i3tsB8m7aQbp+fFqNjgg7fia7uLpFq8vXa7tJg9e3+S15ZBV3uv6/kfb5u6H6reX+XtZ3Du/579Y4UnymvT6/a3GFkyYndUd7G8WS96btX9AA432v7oOHvdTaz3Kcwkseypy7OjT2ALeCrzz1wR+9NHU/af/Vd6LvF8S9e1P5WBDEs4LAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=49e08678c354161061f2b92ed4013139"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=49e08678c354161061f2b92ed4013139^sys_idNOT IN11e08678c354161061f2b92ed4013181,11e08678c354161061f2b92ed4013182,1de08678c354161061f2b92ed4013183,440a1159c3d8961061f2b92ed40131a0,54d814d1c394961061f2b92ed401312a,69695015c394961061f2b92ed401316b,9de08678c354161061f2b92ed4013182"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d424e970c3d0161061f2b92ed401310e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following in Parallel">5d31e5dedfe50300b61ecae83df26326</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>11e08678c354161061f2b92ed4013181</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>f9196d75-9ef7-4737-a734-8b3c19b666d9</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dc24e970c3d0161061f2b92ed401310f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>f9196d75-9ef7-4737-a734-8b3c19b666d9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>11e08678c354161061f2b92ed4013182</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>1311d560-599b-47aa-a747-8d8ab5dafc19</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5024e970c3d0161061f2b92ed4013113</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>f9196d75-9ef7-4737-a734-8b3c19b666d9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>1de08678c354161061f2b92ed4013183</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>df0111b0-c25e-4cfc-8f80-5d502d74082a</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">04695119c3d8961061f2b92ed4013157</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>f9196d75-9ef7-4737-a734-8b3c19b666d9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 14:40:09</sys_created_on>
+        <sys_id>440a1159c3d8961061f2b92ed40131a0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>7be683f0-edf6-4a07-80cb-aef75be3eacc</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">81c890d1c394961061f2b92ed4013137</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 09:55:22</sys_created_on>
+        <sys_id>54d814d1c394961061f2b92ed401312a</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>e05cd300-b56b-4929-a8ab-2578e3bf0e7c</ui_id>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K5Wf0ygfTTv6hkBIk9iQAPGyoejGvqbenDiznZau6n/fdZIWtIE2JB73Fp/7dc61j7JjpvNt592tOXVOPTRs+eU+YqoJGH3vWAM1siXjphHKK9OUPRCxNeguBJScUIsJNzVOjJxYXCvcTJSjr2/IPQrKFcq1GrZ3byjhK6WFxZFPC5amerRsufstpAR1lAnI9ISnPM/meZYk2YdZWs3zKs1EDgg5NdRQoabUs4OQyWWPRK8q9Ns24M5b1TyM58uxy80BNFYEVmkSMXz02Ahiv5SgHUashkaAN3Z7RCyCuGr0E7BSjad2LCQ/OvWTBmZFERIlkkSOQ/B4vIVK4/mwziEkz8ED0em47+yYzldGcXTDggRK6LQ/e44NCVdtkDuU+NB4rDa6q5vPw1bYscHh9gjpHJYC26A20B+1yJuV2VwfmF6opt/MGNSGgz6ewNP+qs4HPjuGGmtqVNbQtrTVsrVmrfpi4lLHD5oOsdRmQ0PDG42BB+IxLRfiC8LPe/gOrAoqPlEbKh5oVuAUL/v3TO1oTcj2EXNbd6bBuSeRtOHyRxcoDpJHceWwn1DCrWr9KU1e46hjH/1pj2fO2O2SmZAiWcB0UVQwnYlZOqXXOJvKvKj4Yp5BseDxNXJ6RDE5IhiiNLIcDLHff+2SJBfXr/ro/Qe8zXUnUMgiTYqXXTebv+S6F/z2Rqtlf7FauON/dFqSJP+t9i5WU64cDDJq64e/o9Pug62Gmcddc+WIWn9NHw//qxDY0gNT/Dm0MfZ7EPWE7X8BbH+e8fkGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">55691015c394961061f2b92ed40131ff</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <parent_ui_id>e05cd300-b56b-4929-a8ab-2578e3bf0e7c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 09:57:54</sys_created_on>
+        <sys_id>69695015c394961061f2b92ed401316b</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>bf6a2023-91ee-4a20-9ac6-2005d261295c</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5c24e970c3d0161061f2b92ed4013111</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="LUP Request Processing">49e08678c354161061f2b92ed4013139</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>f9196d75-9ef7-4737-a734-8b3c19b666d9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>9de08678c354161061f2b92ed4013182</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:09</sys_updated_on>
+        <ui_id>d6da0f2e-86be-435f-b8bc-ccbbba034f10</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=49e08678c354161061f2b92ed4013139"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=49e08678c354161061f2b92ed4013139"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_49e08678c354161061f2b92ed4013139^sys_idNOT IN51e08678c354161061f2b92ed4013168,51e08678c354161061f2b92ed401316f,d5e08678c354161061f2b92ed4013154"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_49e08678c354161061f2b92ed4013139</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>51e08678c354161061f2b92ed4013168</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 04:13:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_49e08678c354161061f2b92ed4013139</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>51e08678c354161061f2b92ed401316f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 04:13:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_49e08678c354161061f2b92ed4013139</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:07</sys_created_on>
+        <sys_id>d5e08678c354161061f2b92ed4013154</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 04:13:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_49e08678c354161061f2b92ed4013139"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_49e08678c354161061f2b92ed4013139"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_49e08678c354161061f2b92ed4013139"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>6b1f51f8c390161061f2b92ed4013132</sys_id>
+        <latest_snapshot>49e08678c354161061f2b92ed4013139</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch0-07-16-2024_07-27-2024_1019.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=6b1f51f8c390161061f2b92ed4013132^sys_idNOT INede08678c354161061f2b92ed40131bd"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"ede08678c354161061f2b92ed40131bd","name":"plan","plan_signature":null}}</plan>
+        <plan_id>6b1f51f8c390161061f2b92ed4013132</plan_id>
+        <snapshot>49e08678c354161061f2b92ed4013139</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 04:13:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ede08678c354161061f2b92ed40131bd</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 14:40:10</sys_updated_on>
+        <trigger display_value="">dde08678c354161061f2b92ed40131bb</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=6b1f51f8c390161061f2b92ed4013132"/>
+</record_update>

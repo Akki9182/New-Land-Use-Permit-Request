@@ -150,6 +150,12 @@
             </choice>
         </element>
         <element label="Comments" max_length="4000" name="approved_sector_lup_master_comments" type="string"/>
+        <element choice="1" label="LUPR State" max_length="40" name="lupr_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rejected" sequence="1" value="3"/>
+                <element inactive_on_update="false" label="Validated" sequence="0" value="1"/>
+            </choice>
+        </element>
         <element label="Sector Review Version of Submission Received" max_length="255" name="sector_review_version_of_submission_received" type="boolean"/>
         <element label="BoD Resolution Number" max_length="40" name="bod_resolution_number" type="string"/>
         <element label="Upload to GIS" max_length="255" name="upload_to_gis" type="boolean"/>
@@ -183,11 +189,11 @@
                 <element inactive_on_update="false" label="Returned to Applicant" sequence="1" value="Returned to Applicant"/>
             </choice>
         </element>
-        <element choice="1" label="Outcome of Review" max_length="40" name="outcome_of_review" type="choice">
+        <element choice="1" default="Validated" label="Outcome of Review" max_length="40" name="outcome_of_review" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Validated" sequence="0" value="Validated"/>
-                <element inactive_on_update="false" label="Returned to Applicant" sequence="1" value="Returned to Applicant"/>
-                <element inactive_on_update="false" label="Rejected" sequence="2" value="Rejected"/>
+                <element inactive_on_update="false" label="Validated" sequence="1" value="Validated"/>
+                <element inactive_on_update="false" label="Returned to Applicant" sequence="2" value="Returned to Applicant"/>
+                <element inactive_on_update="false" label="Rejected" sequence="0" value="Rejected"/>
             </choice>
         </element>
         <element label="Latest Area requirements incorporated into GIS system" max_length="255" name="latest_area_requirements_incorporated_into_gis_system" type="boolean"/>

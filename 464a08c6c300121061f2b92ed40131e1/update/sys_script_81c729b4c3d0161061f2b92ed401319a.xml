@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1329978_new_la_0_lup_task_table</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_1329978_new_la_0_lup_task_table">task_type=technical information and presentation content^EQ<item display_value="Technical Information and Presentation Content" endquery="false" field="task_type" goto="false" newquery="false" operator="=" or="false" value="technical information and presentation content"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Task 3 Closure Check</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    // Query for Task 1
+    var task1 = new GlideRecord('x_1329978_new_la_0_lup_task_table');
+    task1.addQuery('short_description', 'GIS Validation');
+    task1.addQuery('parent', current.lup_request); // Ensure it's the same parent request
+    task1.query();
+
+    var task1Closed = false;
+    if (task1.next()) {
+        task1Closed = (task1.state == '3');
+        gs.info('Task 1 Closed: ' + task1Closed);
+    } else {
+        gs.info('Task 1 not found.');
+    }
+
+    // Query for Task 2
+    var task2 = new GlideRecord('x_1329978_new_la_0_lup_task_table');
+    task2.addQuery('short_description', 'Document Control Quality Check');
+    task2.addQuery('parent', current.lup_request); // Ensure it's the same parent request
+    task2.query();
+
+    var task2Closed = false;
+    if (task2.next()) {
+        task2Closed = (task2.state == '3');
+        gs.info('Task 2 Closed: ' + task2Closed);
+    } else {
+        gs.info('Task 2 not found.');
+    }
+
+    // Check if both Task 1 and Task 2 are closed
+    if (!task1Closed || !task2Closed) {
+        gs.addErrorMessage('You cannot close Task 3 until both Task 1 and Task 2 are closed.');
+        current.setAbortAction(true); // Prevent Task 3 from being closed
+    }
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:29:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>81c729b4c3d0161061f2b92ed401319a</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Task 3 Closure Check</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+        <sys_update_name>sys_script_81c729b4c3d0161061f2b92ed401319a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 06:05:42</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=81c729b4c3d0161061f2b92ed401319a"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>81c729b4c3d0161061f2b92ed401319a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 02:29:44</sys_created_on>
+        <sys_id>3e39e170c3d0161061f2b92ed401316c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 02:29:44</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -8,58 +8,59 @@
         <applies_target_record>true</applies_target_record>
         <applies_to>item</applies_to>
         <cat_item display_value="New Land Use Permit Request">052b0c0ac300121061f2b92ed4013177</cat_item>
-        <cat_variable>IO:6c89184ec340121061f2b92ed40131a0</cat_variable>
+        <cat_variable>IO:91b2a956c308521061f2b92ed4013168</cat_variable>
         <condition/>
         <description/>
         <field/>
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>date validation</name>
+        <name>Construction date validation </name>
         <order/>
         <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-    if (isLoading || !newValue) {
+    if (isLoading || newValue === '') {
         return;
     }
 
-    // Convert the newValue to a standard JavaScript Date object
-    var selectedDate = new Date(newValue);
+    // Get the values of the two date fields
+    var startDate = g_form.getValue('start_date'); // Replace with the correct field name for Start Date
+    var constructionStart = g_form.getValue('construction_start_date'); // Replace with the correct field name for Construction Start
 
-    // Get the current date
-    var currentDate = new Date();
+   
+    // Check if both dates are populated
+    if (startDate && constructionStart) {
+        var startDateObj = new Date(startDate);
+        var constructionStartObj = new Date(constructionStart);
 
-    // Set time to midnight for both dates to ensure accurate comparison
-    currentDate.setHours(0, 0, 0, 0); // Set to midnight
-    selectedDate.setHours(0, 0, 0, 0); // Set to midnight
+        // Validate if Construction Start is before Start Date
+        if (constructionStartObj < startDateObj) {
 
-    // Compare the dates
-    if (selectedDate < currentDate) {
 
-        // Clear the date field
-        g_form.clearValue('start_date');
-        // Show an error message directly below the field
-        g_form.showFieldMsg('start_date', 'The selected date cannot be in the past.', 'error');
-    } else {
-        // Optionally clear any existing error message if the date is valid
-        g_form.hideFieldMsg('start_date');
+
+            g_form.setValue('construction_start_date', ''); // Clear the Construction Start date field
+            g_form.showFieldMsg('construction_start_date', 'Construction Start date cannot be before the Start Date', 'error');
+            
+        } else {
+            g_form.hideFieldMsg('construction_start_date'); // Remove any existing messages if the date is valid
+        }
     }
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-08-19 16:04:33</sys_created_on>
+        <sys_created_on>2024-08-24 13:19:54</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>c430e872c3c8d21061f2b92ed40131e3</sys_id>
-        <sys_mod_count>25</sys_mod_count>
-        <sys_name>date validation</sys_name>
+        <sys_id>c7daa558c3d8521061f2b92ed401312a</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Construction date validation </sys_name>
         <sys_overrides/>
         <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
         <sys_policy/>
         <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
-        <sys_update_name>catalog_script_client_c430e872c3c8d21061f2b92ed40131e3</sys_update_name>
+        <sys_update_name>catalog_script_client_c7daa558c3d8521061f2b92ed401312a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-27 10:46:31</sys_updated_on>
+        <sys_updated_on>2024-08-27 10:51:17</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
@@ -68,13 +69,13 @@
         <view/>
     </catalog_script_client>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>c430e872c3c8d21061f2b92ed40131e3</id>
+        <id>c7daa558c3d8521061f2b92ed401312a</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-08-19 16:04:32</sys_created_on>
-        <sys_id>1690a032c3c8d21061f2b92ed4013173</sys_id>
+        <sys_created_on>2024-08-24 13:23:14</sys_created_on>
+        <sys_id>ccab2958c3d8521061f2b92ed40131aa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-19 16:04:32</sys_updated_on>
+        <sys_updated_on>2024-08-24 13:23:14</sys_updated_on>
         <table>catalog_script_client</table>
         <use_es_latest>false</use_es_latest>
     </sys_es_latest_script>

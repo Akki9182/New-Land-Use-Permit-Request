@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <applies_extended>false</applies_extended>
         <condition/>
         <description/>
@@ -11,15 +11,15 @@
         <name>doc control section validation test</name>
         <order/>
         <script><![CDATA[function onSubmit() {
-    // Get the current values of the state and task_type fields
-    var state = g_form.getValue('state'); // Replace with the actual state field name if different
+    // Get the current values of the lupr_state and task_type fields
+    var lupr_state = g_form.getValue('lupr_state'); // Replace with the actual lupr_state field name if different
     var taskType = g_form.getValue('task_type'); // Replace with the actual task type field name if different
 
     // Variable to track if any mandatory field is invalid
     var isFormValid = true;
 
-    // Proceed only if state is '3' (Close Complete)
-    if (state === '3') { // Replace '3' with the actual value representing 'Close Complete' if different
+    // Proceed only if lupr_state is '1' (Close Complete)
+    if (lupr_state === '1') { // Replace '1' with the actual value representing 'Close Complete' if different
 
         // Define mandatory fields for each task type along with their data types
         var taskTypeFields = {
@@ -145,7 +145,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a9de6da7c388521061f2b92ed4013192</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>doc control section validation test</sys_name>
         <sys_overrides/>
         <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
@@ -153,7 +153,7 @@
         <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
         <sys_update_name>sys_script_client_a9de6da7c388521061f2b92ed4013192</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-22 16:04:25</sys_updated_on>
+        <sys_updated_on>2024-08-24 15:29:51</sys_updated_on>
         <table>x_1329978_new_la_0_lup_task_table</table>
         <type>onSubmit</type>
         <ui_type>10</ui_type>
