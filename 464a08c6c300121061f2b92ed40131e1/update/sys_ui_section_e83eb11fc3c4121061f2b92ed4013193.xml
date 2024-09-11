@@ -4,13 +4,13 @@
             <element>lup_task_variable_macro.xml</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-08-22 13:09:26</sys_created_on>
-            <sys_id>6645536fc380921061f2b92ed40131b5</sys_id>
+            <sys_created_on>2024-09-11 09:45:37</sys_created_on>
+            <sys_id>bf662106c3e0d21061f2b92ed40131df</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="LUPR Variables">417cb95bc3c4121061f2b92ed40131c1</sys_ui_formatter>
             <sys_ui_section caption="Request details" display_value="Request details" name="x_1329978_new_la_0_lup_task_table" sys_domain="global" view="Default view">e83eb11fc3c4121061f2b92ed4013193</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-08-22 13:09:26</sys_updated_on>
+            <sys_updated_on>2024-09-11 09:45:37</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="9d0055c6c360d21061f2b92ed40131a5" sys_domain="global" table="x_1329978_new_la_0_lup_review_task" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-11 08:07:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1d0055c6c360d21061f2b92ed40131a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1329978_new_la_0_lup_review_task" name="x_1329978_new_la_0_lup_review_task" sys_domain="global" view="Default view">9d0055c6c360d21061f2b92ed40131a5</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_1329978_new_la_0_lup_review_task" sys_domain="global" view="Default view">93cb490ec320d21061f2b92ed4013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-11 08:07:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-11 08:07:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>190055c6c360d21061f2b92ed40131aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1329978_new_la_0_lup_review_task" name="x_1329978_new_la_0_lup_review_task" sys_domain="global" view="Default view">9d0055c6c360d21061f2b92ed40131a5</sys_ui_form>
+            <sys_ui_section caption="Review Task" display_value="Review Task" name="x_1329978_new_la_0_lup_review_task" sys_domain="global" view="Default view">910055c6c360d21061f2b92ed40131a4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-11 08:07:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-11 09:27:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d562a9cec3a0d21061f2b92ed4013155</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1329978_new_la_0_lup_review_task" name="x_1329978_new_la_0_lup_review_task" sys_domain="global" view="Default view">9d0055c6c360d21061f2b92ed40131a5</sys_ui_form>
+            <sys_ui_section caption="Request details" display_value="Request details" name="x_1329978_new_la_0_lup_review_task" sys_domain="global" view="Default view">9562a9cec3a0d21061f2b92ed4013152</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-11 09:27:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-11 10:12:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>308ca58ec3e0d21061f2b92ed40131d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1329978_new_la_0_lup_review_task" name="x_1329978_new_la_0_lup_review_task" sys_domain="global" view="Default view">9d0055c6c360d21061f2b92ed40131a5</sys_ui_form>
+            <sys_ui_section caption="Task Notes" display_value="Task Notes" name="x_1329978_new_la_0_lup_review_task" sys_domain="global" view="Default view">308ca58ec3e0d21061f2b92ed40131d0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-11 10:12:10</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1329978_new_la_0_lup_review_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-11 08:07:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9d0055c6c360d21061f2b92ed40131a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1329978_new_la_0_lup_review_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
+            <sys_update_name>sys_ui_form_sections_9d0055c6c360d21061f2b92ed40131a5</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-11 08:07:41</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

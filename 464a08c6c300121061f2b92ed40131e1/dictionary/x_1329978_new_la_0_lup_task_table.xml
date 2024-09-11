@@ -39,6 +39,7 @@
         <element label="BOD Meeting Number" max_length="255" name="bod_meeting_number" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Comments" max_length="4000" name="the_visual_impactis_considered_comments" type="string"/>
         <element label="Upload signed LUCS review form" max_length="255" name="upload_signed_lucs_review_form" type="boolean"/>
+        <element label="Additional Reviewers" max_length="1024" name="additional_reviewer0" reference="sys_user_group" reference_qual="parent=24419456c390921061f2b92ed40131b6" reference_qual_condition="parent=24419456c390921061f2b92ed40131b6" type="glide_list"/>
         <element label="Presentation sent to CEO Office" max_length="255" name="presentation_sent_to_ceo_office" type="boolean"/>
         <element label="Presented to BoD" max_length="255" name="presented_to_bod" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="LUP Request is within Nature Reserve Master Plan (CMP). (multiple selections all" max_length="40" name="luprequestiswithinnaturereservemasterplan" type="choice">
@@ -59,19 +60,6 @@
             <choice>
                 <element inactive_on_update="false" label="No" sequence="0" value="No"/>
                 <element inactive_on_update="false" label="Yes" sequence="1" value="Yes"/>
-            </choice>
-        </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Additional Reviewers" max_length="40" name="additional_reviewers" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Wind Garden" sequence="5" value="wind garden"/>
-                <element inactive_on_update="false" label="Sindalah" sequence="6" value="sindalah"/>
-                <element inactive_on_update="false" label="TROJENA" sequence="2" value="trojena"/>
-                <element inactive_on_update="false" label="Gulf of Aqaba" sequence="4" value="gulf of aqaba"/>
-                <element inactive_on_update="false" label="The Line" sequence="1" value="the line"/>
-                <element inactive_on_update="false" label="OXAGON" sequence="3" value="oxagon"/>
-                <element inactive_on_update="false" label="Proponent" sequence="0" value="proponent"/>
-                <element inactive_on_update="false" label="NEOM Archipelago" sequence="7" value="neom archipelago"/>
-                <element inactive_on_update="false" label="Tanmiah" sequence="8" value="tanmiah"/>
             </choice>
         </element>
         <element label="Regional Planning Review is completed (Select 'No' if RP review is overdue)" max_length="40" name="regional_planning_review_is_completed_select_no_if_rp_review_is_overdue" type="choice">

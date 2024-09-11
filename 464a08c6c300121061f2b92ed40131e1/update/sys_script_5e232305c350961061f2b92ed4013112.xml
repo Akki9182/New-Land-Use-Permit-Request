@@ -3,7 +3,7 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>true</action_insert>
+        <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
         <active>true</active>
@@ -31,63 +31,33 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
-    // Construct encoded query string for tasks that are not yet closed
-    // var tasks3 = 'short_descriptionINGIS Validation,Document Control Quality Check,Final Decision^lup_request=' + current.lup_request;
 
-    var encodedQuery = 'short_descriptionINGIS Validation,Document Control Quality Check,^lup_request=' + current.lup_request;
+    // Construct the encoded query string for tasks that are not in a closed state (assuming state 3 is 'Closed')
+    var encodedQuery = 'lup_request=' + current.lup_request +
+        '^short_descriptionINGIS Validation,Document Control Quality Check' +
+        '^stateIN-5,1,2'; // Replace with actual state values that are considered not closed
 
     var grTask = new GlideRecord('x_1329978_new_la_0_lup_task_table');
     grTask.addEncodedQuery(encodedQuery);
     grTask.query();
 
-    // method 1 start 
-    // var notClosedTasks = new Set(); // Use a Set to ensure uniqueness
-    // while (grTask.next()) {
-    //     var taskDescription = grTask.getValue('short_description'); // Access the short description
-    //     var taskState = grTask.getValue('state'); // Access the state value
-    //     // Use Set to ensure unique task descriptions
-    //     if (taskState !== '3' && taskDescription) {
-    //         notClosedTasks.add(taskDescription);
-    //     }
-    // }
-    // method 1 end 
-
-
-    // method 2 start
     var notClosedTasks = [];
+
+    // Iterate over the results to collect tasks that are not closed
     while (grTask.next()) {
-        var taskDescription = grTask.getValue('short_description'); // Access field value
-        var taskState = grTask.getValue('state'); // Access the state value
-        // Check if the task is not closed and the short description is not already in the array
-        if (taskState != '3' && taskDescription && !notClosedTasks.includes(taskDescription)) {
+        var taskDescription = grTask.getValue('short_description'); // Get the short description
+        if (taskDescription) {
             notClosedTasks.push(taskDescription);
         }
     }
 
-    // method 2 end 
-
-    // var taskDescription = grTask.short_description; // Access field value
-    // if (taskDescription) {
-    //     if (grTask.state != '3') { // Assuming '3' is the state value for 'Closed'
-    //         notClosedTasks.push(taskDescription);
-    //     }
-    // } else {
-    //     gs.info('Task record with Sys ID ' + grTask.sys_id + ' has no short_description.');
-    // }
-
-
-    // If there are tasks that are not closed, show an error message
+    // If there are tasks that are not closed, display an error message and abort the action
     if (notClosedTasks.length > 0) {
-        // method 2
         var errorMessage = 'You cannot close this task until the following tasks are closed: ' + notClosedTasks.join(', ') + '.';
-
-        // method 1 
-        // var errorMessage = 'ABC You cannot close this task until the following tasks are closed: ' + Array.from(notClosedTasks).join(', ') + '.';
         gs.addErrorMessage(errorMessage);
         current.setAbortAction(true); // Prevent the current task from being closed
-    } else {
-        gs.info('All required tasks are closed.');
     }
+
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -95,7 +65,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5e232305c350961061f2b92ed4013112</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>TASK 3 CLOSURE CHECK</sys_name>
         <sys_overrides/>
         <sys_package display_value="New Land Use Permit Request" source="x_1329978_new_la_0">464a08c6c300121061f2b92ed40131e1</sys_package>
@@ -103,7 +73,7 @@
         <sys_scope display_value="New Land Use Permit Request">464a08c6c300121061f2b92ed40131e1</sys_scope>
         <sys_update_name>sys_script_5e232305c350961061f2b92ed4013112</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-27 16:43:51</sys_updated_on>
+        <sys_updated_on>2024-08-29 11:16:04</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

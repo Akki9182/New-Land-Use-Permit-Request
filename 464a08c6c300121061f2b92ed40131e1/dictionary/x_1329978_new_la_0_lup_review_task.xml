@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="eecb4142c360d21061f2b92ed4013107" extends="task" label="LUP Review Task" max_length="40" name="x_1329978_new_la_0_lup_review_task" type="collection">
+        <element label="reviewer" max_length="32" name="reviewer" reference="sys_user" type="reference"/>
+        <element label="LUP Request" max_length="32" name="lup_request" reference="x_1329978_new_la_0_lup_request" type="reference"/>
+        <element label="Review requested by" max_length="32" name="review_requested_by" reference="sys_user" type="reference"/>
+        <element label="Review Notes" max_length="65536" name="review_notes" type="html"/>
+        <element label="Review Deadline" max_length="255" name="review_deadline" type="glide_date_time"/>
+        <element choice="1" label="Review Outcome" max_length="40" name="review_outcome" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Completed with issues" sequence="3" value="Completed with issues"/>
+                <element inactive_on_update="false" label="Approved" sequence="0" value="Approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="1" value="Rejected"/>
+                <element inactive_on_update="false" label="Requires changes" sequence="2" value="Require changes"/>
+            </choice>
+        </element>
+    </element>
+</database>
